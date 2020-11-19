@@ -18,3 +18,23 @@ C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\Z
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygServer_API\obj\Debug\netcoreapp3.1\ZenZygServer_API.dll
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygServer_API\obj\Debug\netcoreapp3.1\ZenZygServer_API.pdb
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygServer_API\obj\Debug\netcoreapp3.1\ZenZygServer_API.genruntimeconfig.cache
+C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\obj\Debug\netcoreapp3.1\ZenZygServer_API.csprojAssemblyReference.cache
+C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\obj\Debug\netcoreapp3.1\ZenZygServer_API.AssemblyInfoInputs.cache
+C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\obj\Debug\netcoreapp3.1\ZenZygServer_API.AssemblyInfo.cs
+C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\obj\Debug\netcoreapp3.1\ZenZygServer_API.csproj.CoreCompileInputs.cache
+C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\obj\Debug\netcoreapp3.1\ZenZygServer_API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\obj\Debug\netcoreapp3.1\ZenZygServer_API.dll
+C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\obj\Debug\netcoreapp3.1\ZenZygServer_API.pdb
+C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\bin\Debug\netcoreapp3.1\ZenZygServer_API.exe
+C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\bin\Debug\netcoreapp3.1\ZenZygServer_API.deps.json
+C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\bin\Debug\netcoreapp3.1\ZenZygServer_API.runtimeconfig.json
+C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\bin\Debug\netcoreapp3.1\ZenZygServer_API.runtimeconfig.dev.json
+C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\bin\Debug\netcoreapp3.1\ZenZygServer_API.dll
+C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\bin\Debug\netcoreapp3.1\ZenZygServer_API.pdb
+C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\obj\Debug\netcoreapp3.1\ZenZygServer_API.RazorTargetAssemblyInfo.cache
+C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\obj\Debug\netcoreapp3.1\staticwebassets\ZenZygServer_API.StaticWebAssets.Manifest.cache
+C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\obj\Debug\netcoreapp3.1\staticwebassets\ZenZygServer_API.StaticWebAssets.xml
+C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\obj\Debug\netcoreapp3.1\ZenZygServer_API.genruntimeconfig.cache
