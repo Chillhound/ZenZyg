@@ -1,3 +1,3 @@
 ��# ZenZyg
 
-Rune han lugter af tis
+Lasse han lugter af tis
