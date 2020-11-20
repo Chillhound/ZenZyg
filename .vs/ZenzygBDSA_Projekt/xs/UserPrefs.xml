@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{BF7DBB42-4170-4FB6-86A9-722F2160F69A}|Default">
+  <MonoDevelop.Ide.ItemProperties.ZenZygServer__API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ZenZygServer_API/Entities/ZenZygContext.cs">
+    <Files>
+      <File FileName="ZenZygServer_API/Entities/IZenZygContext.cs" Line="1" Column="1" />
+      <File FileName="ZenZygServer_API/Entities/ZenZygContext.cs" Line="35" Column="13" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ZenzygBDSA_Projekt" expanded="True" selected="True">
+            <Node name="ZenZygServer_API" expanded="True">
+              <Node name="Entities" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="DTO" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="ZenZyg_All" Name="ZenZyg_All">
+      <Items>
+        <StartupItem ItemId="{D12C7CE8-7CAE-4D9C-8589-9F40A1DBB67D}" ItemName="ZenZygClient" ConfigurationId="Default" />
+        <StartupItem ItemId="{BF7DBB42-4170-4FB6-86A9-722F2160F69A}" ItemName="ZenZygServer_API" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+</Properties>
