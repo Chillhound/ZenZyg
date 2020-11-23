@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygServer_API/ZenZygServer_API.csproj": {}
+    "C:\\Users\\mathi\\Desktop\\ZenZyg\\ZenZygServer_API\\ZenZygServer_API.csproj": {}
   },
   "projects": {
-    "/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygServer_API/ZenZygServer_API.csproj": {
+    "C:\\Users\\mathi\\Desktop\\ZenZyg\\ZenZygServer_API\\ZenZygServer_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygServer_API/ZenZygServer_API.csproj",
+        "projectUniqueName": "C:\\Users\\mathi\\Desktop\\ZenZyg\\ZenZygServer_API\\ZenZygServer_API.csproj",
         "projectName": "ZenZygServer_API",
-        "projectPath": "/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygServer_API/ZenZygServer_API.csproj",
-        "packagesPath": "/Users/anesskrijelj/.nuget/packages/",
-        "outputPath": "/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygServer_API/obj/",
+        "projectPath": "C:\\Users\\mathi\\Desktop\\ZenZyg\\ZenZygServer_API\\ZenZygServer_API.csproj",
+        "packagesPath": "C:\\Users\\mathi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mathi\\Desktop\\ZenZyg\\ZenZygServer_API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/Users/anesskrijelj/.config/NuGet/NuGet.Config"
+          "C:\\Users\\mathi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -75,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

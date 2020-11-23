@@ -8315,24 +8315,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/anesskrijelj/.nuget/packages/": {}
+    "C:\\Users\\mathi\\.nuget\\packages\\": {},
+    "E:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/ZenZygClient.csproj",
+      "projectUniqueName": "C:\\Users\\mathi\\Desktop\\ZenZyg\\ZenZygClient\\ZenZygClient.csproj",
       "projectName": "ZenZygClient",
-      "projectPath": "/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/ZenZygClient.csproj",
-      "packagesPath": "/Users/anesskrijelj/.nuget/packages/",
-      "outputPath": "/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/",
+      "projectPath": "C:\\Users\\mathi\\Desktop\\ZenZyg\\ZenZygClient\\ZenZygClient.csproj",
+      "packagesPath": "C:\\Users\\mathi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mathi\\Desktop\\ZenZyg\\ZenZygClient\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "E:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/anesskrijelj/.config/NuGet/NuGet.Config"
+        "C:\\Users\\mathi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8399,7 +8406,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

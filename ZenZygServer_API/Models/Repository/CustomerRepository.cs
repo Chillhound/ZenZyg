@@ -1,9 +1,9 @@
-using System;
 using System.Net;
 using System.Threading.Tasks;
 using ZenZygServer_API.Entities;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace ZenZygServer_API.Models
 {
@@ -64,7 +64,17 @@ namespace ZenZygServer_API.Models
 
         public async Task<HttpStatusCode> Delete(int CustomerId)
         {
-            throw new NotImplementedException();
+            var entity = await _context.Customers.FindAsync(CustomerId);
+
+            if (entity == null)
+            {
+                return HttpStatusCode.NotFound;
+            }
+
+            _context.Customers.Remove(entity);
+
+            await _context.SaveChangesAsync();
+            return HttpStatusCode.NoContent;
         }
 
 

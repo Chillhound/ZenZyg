@@ -9,5 +9,7 @@ namespace ZenZygServer_API.Models
         
         [Required]
         public int Email { get; set; }
+
+        public int StoreId { get; set; }
     }
 }
