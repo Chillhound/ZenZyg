@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ZenZygServer_API",
+    "\\ZenZygServer_API\\Controllers",
+    "\\ZenZygServer_API\\Entities",
+    "\\ZenZygServer_API\\Models"
+  ],
+  "SelectedNode": "\\ZenZygServer_API\\Models\\CustomerCreateDTO.cs",
+  "PreviewInSolutionExplorer": false
+}
