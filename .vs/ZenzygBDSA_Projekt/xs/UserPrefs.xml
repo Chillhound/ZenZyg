@@ -1,19 +1,28 @@
 ﻿<Properties StartupConfiguration="ZenZyg_All">
   <MonoDevelop.Ide.ItemProperties.ZenZygServer__API PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.ZenZygClient PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ZenZygServer_API/Entities/ZenZygContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ZenZygServer_API/Models/Repository/CustomerRepository.cs">
     <Files>
-      <File FileName="ZenZygServer_API/Entities/IZenZygContext.cs" Line="1" Column="1" />
-      <File FileName="ZenZygServer_API/Entities/ZenZygContext.cs" Line="28" Column="98" />
+      <File FileName="ZenZygServer_API/Models/Repository/CustomerRepository.cs" Line="50" Column="74" />
+      <File FileName="ZenZygServer_API/Models/Repository/ICustomerRepository.cs" Line="2" Column="1" />
+      <File FileName="ZenZygServer_API/Entities/Customer.cs" Line="7" Column="9" />
+      <File FileName="ZenZygServer_API/Entities/IZenZygContext.cs" Line="18" Column="83" />
+      <File FileName="ZenZygServer_API/Models/DTO/CustomerDetailsDTO.cs" Line="7" Column="44" />
+      <File FileName="ZenZygServer_API/Models/DTO/CustomerCreateDTO.cs" Line="7" Column="9" />
+      <File FileName="ZenZygServer_API/Models/DTO/CustomerUpdateDTO.cs" Line="7" Column="44" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ZenzygBDSA_Projekt" expanded="True" selected="True">
+          <Node name="ZenzygBDSA_Projekt" expanded="True">
             <Node name="ZenZygServer_API" expanded="True">
+              <Node name="Controllers" expanded="True" />
               <Node name="Entities" expanded="True" />
               <Node name="Models" expanded="True">
                 <Node name="DTO" expanded="True" />
+                <Node name="Repository" expanded="True">
+                  <Node name="CustomerRepository.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>

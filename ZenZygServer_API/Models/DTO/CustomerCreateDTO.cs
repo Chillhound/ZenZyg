@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace ZenZygServer_API.Models
 {
     public class CustomerCreateDTO

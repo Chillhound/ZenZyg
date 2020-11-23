@@ -1,13 +1,14 @@
 using System.Linq;
 using System.Threading.Tasks;
+using System.Net;
 
 namespace ZenZygServer_API.Models
 {
     public interface ICustomerRepository
     {
-        Task<(Status response, int CustomerId)> Create (CustomerCreateDTO Customer);
+        Task<HttpStatusCode> Create (CustomerCreateDTO Customer);
         Task<CustomerDetailsDTO> Read (int CustomerId);
-        Task<Status> Update (CustomerUpdateDTO Customer);
-        Task<Status> Delete (int CustomerId);
+        Task<HttpStatusCode> Update (CustomerUpdateDTO Customer);
+        Task<HttpStatusCode> Delete (int CustomerId);
     }    
 }

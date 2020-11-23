@@ -1,13 +1,14 @@
 using System.Linq;
 using System.Threading.Tasks;
+using System.Net;
 
 namespace ZenZygServer_API.Models
 {
-    public class IStoreRepository
+    public interface IStoreRepository
     {
-        Task<(Status response, int StoreId)> Create (StoreCreateDTO Store);
+        Task<HttpStatusCode> Create (StoreCreateDTO Store);
         Task<StoreDetailsDTO> Read (int StoreId);
-        Task<Status> Update (StoreUpdateDTO Store);
-        Task<Status> Delete (int StoreId);
+        Task<HttpStatusCode> Update (StoreUpdateDTO Store);
+        Task<HttpStatusCode> Delete (int StoreId);
     }
 }
