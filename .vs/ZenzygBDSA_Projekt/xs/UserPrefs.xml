@@ -3,7 +3,7 @@
   <MonoDevelop.Ide.ItemProperties.ZenZygClient PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="ZenZygServer_API/Models/Repository/CustomerRepository.cs">
     <Files>
-      <File FileName="ZenZygServer_API/Models/Repository/CustomerRepository.cs" Line="50" Column="74" />
+      <File FileName="ZenZygServer_API/Models/Repository/CustomerRepository.cs" Line="62" Column="45" />
       <File FileName="ZenZygServer_API/Models/Repository/ICustomerRepository.cs" Line="2" Column="1" />
       <File FileName="ZenZygServer_API/Entities/Customer.cs" Line="7" Column="9" />
       <File FileName="ZenZygServer_API/Entities/IZenZygContext.cs" Line="18" Column="83" />
