@@ -8327,7 +8327,7 @@
       "outputPath": "/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/anesskrijelj/.config/NuGet/NuGet.Config"
+        "/Users/anesskrijelj/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
