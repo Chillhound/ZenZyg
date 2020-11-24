@@ -8,13 +8,14 @@ using System.Threading.Tasks;
 
 namespace ZenZygServer_API.Entities
 {
-    public class ZenZygContext : DbContext
+    public class ZenZygContext : DbContext, IZenZygContext
     {
-        DbSet<Customer> Customers { get; set; }
-        DbSet<Store> Stores { get; set; }
-        DbSet<StoreManager> StoreManagers { get; set; }
-        DbSet<Queue> Queues { get; set; }
-        DbSet<Ticket> Tickets { get; set; }
+      
+        DbSet<Customer> IZenZygContext.Customers { get; set; }
+        DbSet<Store> IZenZygContext.Stores { get; set; }
+        DbSet<StoreManager> IZenZygContext.StoreManagers { get; set; }
+        DbSet<Queue> IZenZygContext.Queues { get; set; }
+        DbSet<Ticket> IZenZygContext.Tickets { get; set; }
 
         public ZenZygContext() { }
 

@@ -8,7 +8,7 @@ namespace ZenZygServer_API.Models
         public string Name { get; set; }
         
         [Required]
-        public int Email { get; set; }
+        public string Email { get; set; }
 
         public int StoreId { get; set; }
     }

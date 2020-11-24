@@ -11,7 +11,7 @@ namespace ZenZygServer_API.Entities
         public string Name { get; set; }
 
         [Required]
-        public int PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
     }
     
 }
