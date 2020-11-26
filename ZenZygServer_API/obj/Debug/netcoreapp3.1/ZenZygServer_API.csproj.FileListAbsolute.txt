@@ -121,3 +121,4 @@ C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\obj\Debug\netcoreapp3.1\ZenZygSer
 C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\obj\Debug\netcoreapp3.1\ZenZygServer_API.dll
 C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\obj\Debug\netcoreapp3.1\ZenZygServer_API.pdb
 C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\obj\Debug\netcoreapp3.1\ZenZygServer_API.genruntimeconfig.cache
+C:\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\obj\Debug\netcoreapp3.1\ZenZygServer_API.csprojAssemblyReference.cache

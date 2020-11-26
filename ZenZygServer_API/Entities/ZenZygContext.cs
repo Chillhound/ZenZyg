@@ -11,11 +11,11 @@ namespace ZenZygServer_API.Entities
     public class ZenZygContext : DbContext, IZenZygContext
     {
       
-        DbSet<Customer> IZenZygContext.Customers { get; set; }
-        DbSet<Store> IZenZygContext.Stores { get; set; }
-        DbSet<StoreManager> IZenZygContext.StoreManagers { get; set; }
-        DbSet<Queue> IZenZygContext.Queues { get; set; }
-        DbSet<Ticket> IZenZygContext.Tickets { get; set; }
+       public DbSet<Customer> Customers { get; set; }
+       public DbSet<Store> Stores { get; set; }
+       public DbSet<StoreManager> StoreManagers { get; set; }
+       public DbSet<Queue> Queues { get; set; }
+       public DbSet<Ticket> Tickets { get; set; }
 
         public ZenZygContext() { }
 
@@ -27,12 +27,20 @@ namespace ZenZygServer_API.Entities
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=ZenZyg;Trusted_Connection=True;MultipleActiveResultSets=true";
+
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer(@"Server=localhost\MSSQLSERVER01;Database=Kanban;Trusted_Connection=True;");
+            }
+
+            /*
+            var connectionString = @"Server=localhost\MSSQLSERVER01;Database=ZenZyg;Trusted_Connection=True;MultipleActiveResultSets=true";
 
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer(connectionString);
             }
+            */
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\9_B5TyDpNhq3hkbJp6KxA4CfbBne5Xc6jn3FulBSMj8=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\BBVF3fXZVqTbyGH5726bG-EfHDOvBPI6yFrQdTGq_Zo=.hash",
       "Source": "C:\\Users\\mathi\\Desktop\\ZenZyg\\ZenZygClient\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\ZenZygClient.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/ZenZygClient.dll.br"
     },
@@ -31,7 +31,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Memory.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\HQeN_ZfHAERO_uW0fP0J9J3WV1hQ3vUIOWbqGSYBPp8=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\M1pYQBRnwZmTq5CodeZxTzsPoWvxBmTSTyy3y0pe8P0=.hash",
       "Source": "C:\\Users\\mathi\\Desktop\\ZenZyg\\ZenZygClient\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Text.Json.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Json.dll.br"
     },
@@ -41,7 +41,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Runtime.CompilerServices.Unsafe.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\OBWh2or_2mU6elwqPfmL72FBZVKl2WzTJ4L-IrKeXM4=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\APJhF7Cne1YtXAEDjYtS_NC54Yt8Uy4W364YV6GfInE=.hash",
       "Source": "C:\\Users\\mathi\\Desktop\\ZenZyg\\ZenZygClient\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Bcl.AsyncInterfaces.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Bcl.AsyncInterfaces.dll.br"
     },
@@ -151,7 +151,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Numerics.Vectors.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Tqh1Da_iTRQJEZUGAsMNFuZ4hf1PMf13WApRZod_uw4=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\QC2lFdhGg2mRa2tR3yhZ47dJn2L5nn4cRFtCHgTXc2c=.hash",
       "Source": "C:\\Users\\mathi\\Desktop\\ZenZyg\\ZenZygClient\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Text.Encodings.Web.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Encodings.Web.dll.br"
     },
@@ -321,7 +321,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Yk3q9sKbzF1JIcRg4rVASIhkNsJaf6swLfrqZBsJ6_Q=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\KdBu9pDaNpQ6g4q-R4A_Y3dgOXP71zEgw3q9WuhPmnA=.hash",
       "Source": "C:\\Users\\mathi\\Desktop\\ZenZyg\\ZenZygClient\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\ZenZygClient.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/ZenZygClient.pdb.br"
     },
@@ -346,7 +346,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\N3xCtgJUdcWqDp3feMHGBWSgifAURTmvEKAxx7bxIL4=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\4tFX_ezk-_g-UC3ve3gtiov1yHw6YlmmRiVU0VKgo2Q=.hash",
       "Source": "C:\\Users\\mathi\\Desktop\\ZenZyg\\ZenZygClient\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
     }

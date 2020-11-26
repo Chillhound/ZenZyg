@@ -4,12 +4,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ZenZygServer_API.Entities;
 using System.Linq;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Xunit;
 using System.Net;
+using ZenZygServer_API.Models;
+using ZenZygServer_API.Entities;
 
 namespace ZenZyg.Tests.ZenZygServer_API.Models.Tests
 {
@@ -22,13 +23,15 @@ namespace ZenZyg.Tests.ZenZygServer_API.Models.Tests
 
         public CustomerRepositoryTest()
         {
-            _connection = new SqliteConnection("Filename:=memory:");
-            _connection.Open();
-            var builder = new DbContextOptionsBuilder<ZenZygContext>().UseSqlite(_connection);
+            
+           _connection = new SqliteConnection();
+           _connection.Open();
+           var builder = new DbContextOptionsBuilder<ZenZygContext>().UseSqlite(_connection);
             _context = new ZenZygContext(builder.Options);
             _context.Database.EnsureCreated();
 
             _repository = new CustomerRepository(_context);
+            
 
         }
 
@@ -44,17 +47,12 @@ namespace ZenZyg.Tests.ZenZygServer_API.Models.Tests
             var entity = await _repository.Create(customer);
 
             Assert.Equal(HttpStatusCode.Created, entity);
-        } 
-
-
-
-
-
-
+        }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            _connection.Dispose();
+            _context.Dispose();
         }
     }
 }
