@@ -30,7 +30,7 @@ namespace ZenZygServer_API.Entities
 
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Server=localhost\MSSQLSERVER01;Database=Kanban;Trusted_Connection=True;");
+                optionsBuilder.UseSqlite(@"Data Source=\Users\mathi\Desktop\ZenZyg\ZenZyg.Tests\test.db");
             }
 
             /*

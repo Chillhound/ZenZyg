@@ -4,6 +4,7 @@ using System.Linq;
 using ZenZygServer_API.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System;
 
 namespace ZenZygServer_API.Models
 {
@@ -39,8 +40,8 @@ namespace ZenZygServer_API.Models
                          {
                              StoreManagerId = s.StoreManagerId,
                              Name = s.Name,
-                             Email = s.Email,
-                             StoreId = s.StoreId                             
+                             Email = s.Email
+                             //StoreId = s.StoreId                             
                          };
 
             return await entity.FirstOrDefaultAsync();

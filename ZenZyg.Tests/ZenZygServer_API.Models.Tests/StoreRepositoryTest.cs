@@ -1,52 +1,53 @@
-﻿using Microsoft.Data.Sqlite;
+﻿using System;
+using System.Linq;
+using System.Collections.Generic;
+using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Threading.Tasks;
 using Xunit;
-using System.Net;
-using ZenZygServer_API.Models;
 using ZenZygServer_API.Entities;
+using System.Net;
 
-namespace ZenZyg.Tests.ZenZygServer_API.Models.Tests
+namespace ZenZygServer_API.Models.Tests
 {
-    
-    public class CustomerRepositoryTest : IDisposable
+    public class StoreRepositoryTest : IDisposable
     {
-        private readonly CustomerRepository _repository;
-        private readonly ZenZygContext _context;
         private readonly SqliteConnection _connection;
+        private readonly ZenZygContext _context;
+        private readonly StoreRepository _repository;
 
-        public CustomerRepositoryTest()
+
+
+
+        public StoreRepositoryTest()
         {
-
-            //string connection = @"Data Source=\Users\mathi\Desktop\ZenZyg\ZenZyg.Tests\test.db";
-           _connection = new SqliteConnection("Filename =:memory:");
-           _connection.Open();
-           var builder = new DbContextOptionsBuilder<ZenZygContext>().UseSqlite(_connection);
+            _connection = new SqliteConnection("Filename =:memory:");
+            _connection.Open();
+            var builder = new DbContextOptionsBuilder<ZenZygContext>().UseSqlite(_connection);
             _context = new ZenZygContext(builder.Options);
             _context.Database.EnsureCreated();
 
-            _repository = new CustomerRepository(_context);
-            
-
+            _repository = new StoreRepository(_context);
         }
 
         [Fact]
-        public async Task Create_Customer_returns_httpstatus_created()
+        public async Task Create_Store_returns_httpstatus_created()
         {
-            var customer = new CustomerCreateDTO
+            var store = new StoreCreateDTO
             {
-                Name = "Anes",
-                PhoneNumber = "12 23 45 67"
+                Name = "Netto",
+                Address = "Amagerfælledvej 170, 2300 København S",
+                Size = 1000,
+                StoreManagerId = 1
             };
 
-            var entity = await _repository.Create(customer);
+            var entity = await _repository.Create(store);
 
             Assert.Equal(HttpStatusCode.Created, entity);
         }
-
+        /*
         [Fact]
-        public async Task Given_CustomerId_Return_Customer()
+        public async Task Given_StoreId_Return_()
         {
             var customer = new CustomerCreateDTO
             {
@@ -146,13 +147,13 @@ namespace ZenZyg.Tests.ZenZygServer_API.Models.Tests
             Assert.Equal(HttpStatusCode.NoContent, result);
         }
 
+
+        */
+
         public void Dispose()
         {
-            
             _connection.Dispose();
             _context.Dispose();
         }
     }
 }
-
-

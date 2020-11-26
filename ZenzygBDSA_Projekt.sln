@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZenZygServer_API", "ZenZygS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZenZygClient", "ZenZygClient\ZenZygClient.csproj", "{D12C7CE8-7CAE-4D9C-8589-9F40A1DBB67D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZenZyg.Tests", "ZenZyg.Tests\ZenZyg.Tests.csproj", "{D29E4CEA-8464-4A9A-823F-90B5DF1DBD47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZenZyg.Tests", "ZenZyg.Tests\ZenZyg.Tests.csproj", "{D29E4CEA-8464-4A9A-823F-90B5DF1DBD47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

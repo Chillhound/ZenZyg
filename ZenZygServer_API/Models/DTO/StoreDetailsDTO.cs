@@ -11,7 +11,7 @@ namespace ZenZygServer_API.Models
         public string Name { get; set; }
 
         [Required]
-        public StoreManager StoreManagerId { get; set; }
+        public int? StoreManagerId { get; set; }
 
         [Required]
         public double Size { get; set; }
