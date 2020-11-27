@@ -30,7 +30,8 @@ namespace ZenZygServer_API.Entities
 
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlite(@"Data Source=\Users\mathi\Desktop\ZenZyg\ZenZyg.Tests\test.db");
+                //Replace connectinstring with own path
+                optionsBuilder.UseSqlite(@"Data Source=\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\test.db");
             }
 
             /*
