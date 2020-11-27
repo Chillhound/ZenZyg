@@ -80,6 +80,10 @@
               "target": "Package",
               "version": "[5.0.0, )"
             },
+            "QRCoder": {
+              "target": "Package",
+              "version": "[1.4.1, )"
+            },
             "System.Net.Http.Json": {
               "target": "Package",
               "version": "[3.2.0, )"

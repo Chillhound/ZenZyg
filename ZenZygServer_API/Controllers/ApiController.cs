@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ZenZygServer_API.Entities;
 using ZenZygServer_API.Models;
 
 namespace ZenZygServer_API.Controllers
@@ -15,7 +16,7 @@ namespace ZenZygServer_API.Controllers
         // GET: ApiController/Create
         [HttpGet]
         [Route("createticket")]
-        public async Task<ActionResult<Ticket>> CreateTicket(string storeID, string phoneNumber)                // Check Phonenumber format
+        public async Task<ActionResult<Ticket>> CreateTicket(int storeID, string phoneNumber)                // Check Phonenumber format
         {
             TicketGenerator ticketGenerator = new TicketGenerator();
             Ticket ticket = await ticketGenerator.GenerateTicket(phoneNumber,storeID);

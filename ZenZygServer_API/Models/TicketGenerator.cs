@@ -5,6 +5,7 @@ using ZenZygServer_API.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
+using ZenZygServer_API.Entities;
 
 namespace ZenZygServer_API
 {
@@ -19,7 +20,7 @@ namespace ZenZygServer_API
     {
       
         // The QrCode will be saved as a Base64 image that is stored as a string
-        public async Task<Ticket> GenerateTicket(string phoneNumb, string storeID)
+        public async Task<Ticket> GenerateTicket(string phoneNumb, int storeID)
         {
             if (phoneNumb == null || storeID == null) return null;
 
@@ -31,10 +32,10 @@ namespace ZenZygServer_API
             Ticket ticket = new Ticket
             {
                 phoneNumber = phoneNumb,
-                storeID = storeID,
+                StoreId = storeID,
                 QRData = QrCodeImageData
             };
-
+           
             return ticket;
         }
     }

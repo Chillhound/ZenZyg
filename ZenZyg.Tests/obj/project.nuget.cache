@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UsSFhH3BNicyPK/yj/d7Hw/RQyMH3oRAbHSxkPSfn2EZR885D3bhwP22sJsQ4MkymVGFpYo0+wlildEXzC4znA==",
+  "dgSpecHash": "wnapP3zAXP1t+T3IsUd6C6yemOX/BBUtXOTGHMxbB3J7N4u2t5b7SPsYxPF+slii/Rn4ogQZ/JRkiULXfbF0uw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mathi\\Desktop\\ZenZyg\\ZenZyg.Tests\\ZenZyg.Tests.csproj",
   "expectedPackageFiles": [
@@ -55,6 +55,7 @@
     "C:\\Users\\mathi\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\mathi\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
     "C:\\Users\\mathi\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
+    "C:\\Users\\mathi\\.nuget\\packages\\qrcoder\\1.4.1\\qrcoder.1.4.1.nupkg.sha512",
     "C:\\Users\\mathi\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\mathi\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\mathi\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
