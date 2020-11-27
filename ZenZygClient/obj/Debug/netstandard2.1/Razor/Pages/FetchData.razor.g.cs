@@ -79,7 +79,7 @@ using ZenZygClient.Shared;
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
             __builder.AddMarkupContent(0, "<h1>Weather forecast</h1>\r\n\r\n");
-            __builder.AddMarkupContent(1, "<p>This component demonstrates fetching data from the server.</p>\r\n\r\n");
+            __builder.AddMarkupContent(1, "<p>This component demonstrates fetching data from the server.</p>");
 #nullable restore
 #line 8 "C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\Pages\FetchData.razor"
  if (forecasts == null)
@@ -88,8 +88,7 @@ using ZenZygClient.Shared;
 #line default
 #line hidden
 #nullable disable
-            __builder.AddContent(2, "    ");
-            __builder.AddMarkupContent(3, "<p><em>Loading...</em></p>\r\n");
+            __builder.AddMarkupContent(2, "<p><em>Loading...</em></p>");
 #nullable restore
 #line 11 "C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\Pages\FetchData.razor"
 }
@@ -99,13 +98,10 @@ else
 #line default
 #line hidden
 #nullable disable
-            __builder.AddContent(4, "    ");
-            __builder.OpenElement(5, "table");
-            __builder.AddAttribute(6, "class", "table");
-            __builder.AddMarkupContent(7, "\r\n        ");
-            __builder.AddMarkupContent(8, "<thead>\r\n            <tr>\r\n                <th>Date</th>\r\n                <th>Temp. (C)</th>\r\n                <th>Temp. (F)</th>\r\n                <th>Summary</th>\r\n            </tr>\r\n        </thead>\r\n        ");
-            __builder.OpenElement(9, "tbody");
-            __builder.AddMarkupContent(10, "\r\n");
+            __builder.OpenElement(3, "table");
+            __builder.AddAttribute(4, "class", "table");
+            __builder.AddMarkupContent(5, "<thead><tr><th>Date</th>\r\n                <th>Temp. (C)</th>\r\n                <th>Temp. (F)</th>\r\n                <th>Summary</th></tr></thead>\r\n        ");
+            __builder.OpenElement(6, "tbody");
 #nullable restore
 #line 24 "C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\Pages\FetchData.razor"
              foreach (var forecast in forecasts)
@@ -114,14 +110,36 @@ else
 #line default
 #line hidden
 #nullable disable
-            __builder.AddContent(11, "                ");
-            __builder.OpenElement(12, "tr");
+            __builder.OpenElement(7, "tr");
+            __builder.OpenElement(8, "td");
+            __builder.AddContent(9, 
+#nullable restore
+#line 27 "C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\Pages\FetchData.razor"
+                         forecast.Date.ToShortDateString()
+
+#line default
+#line hidden
+#nullable disable
+            );
+            __builder.CloseElement();
+            __builder.AddMarkupContent(10, "\r\n                    ");
+            __builder.OpenElement(11, "td");
+            __builder.AddContent(12, 
+#nullable restore
+#line 28 "C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\Pages\FetchData.razor"
+                         forecast.TemperatureC
+
+#line default
+#line hidden
+#nullable disable
+            );
+            __builder.CloseElement();
             __builder.AddMarkupContent(13, "\r\n                    ");
             __builder.OpenElement(14, "td");
             __builder.AddContent(15, 
 #nullable restore
-#line 27 "C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\Pages\FetchData.razor"
-                         forecast.Date.ToShortDateString()
+#line 29 "C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\Pages\FetchData.razor"
+                         forecast.TemperatureF
 
 #line default
 #line hidden
@@ -132,30 +150,6 @@ else
             __builder.OpenElement(17, "td");
             __builder.AddContent(18, 
 #nullable restore
-#line 28 "C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\Pages\FetchData.razor"
-                         forecast.TemperatureC
-
-#line default
-#line hidden
-#nullable disable
-            );
-            __builder.CloseElement();
-            __builder.AddMarkupContent(19, "\r\n                    ");
-            __builder.OpenElement(20, "td");
-            __builder.AddContent(21, 
-#nullable restore
-#line 29 "C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\Pages\FetchData.razor"
-                         forecast.TemperatureF
-
-#line default
-#line hidden
-#nullable disable
-            );
-            __builder.CloseElement();
-            __builder.AddMarkupContent(22, "\r\n                    ");
-            __builder.OpenElement(23, "td");
-            __builder.AddContent(24, 
-#nullable restore
 #line 30 "C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\Pages\FetchData.razor"
                          forecast.Summary
 
@@ -164,9 +158,7 @@ else
 #nullable disable
             );
             __builder.CloseElement();
-            __builder.AddMarkupContent(25, "\r\n                ");
             __builder.CloseElement();
-            __builder.AddMarkupContent(26, "\r\n");
 #nullable restore
 #line 32 "C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\Pages\FetchData.razor"
             }
@@ -174,11 +166,8 @@ else
 #line default
 #line hidden
 #nullable disable
-            __builder.AddContent(27, "        ");
             __builder.CloseElement();
-            __builder.AddMarkupContent(28, "\r\n    ");
             __builder.CloseElement();
-            __builder.AddMarkupContent(29, "\r\n");
 #nullable restore
 #line 35 "C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\Pages\FetchData.razor"
 }

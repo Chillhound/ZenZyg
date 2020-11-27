@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZenZygServer_API", "ZenZygServer_API\ZenZygServer_API.csproj", "{BF7DBB42-4170-4FB6-86A9-722F2160F69A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZenZygClient", "ZenZygClient\ZenZygClient.csproj", "{D12C7CE8-7CAE-4D9C-8589-9F40A1DBB67D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZenZygClient", "ZenZygClient\ZenZygClient.csproj", "{D12C7CE8-7CAE-4D9C-8589-9F40A1DBB67D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZenZyg.Tests", "ZenZyg.Tests\ZenZyg.Tests.csproj", "{D29E4CEA-8464-4A9A-823F-90B5DF1DBD47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D12C7CE8-7CAE-4D9C-8589-9F40A1DBB67D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D12C7CE8-7CAE-4D9C-8589-9F40A1DBB67D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D12C7CE8-7CAE-4D9C-8589-9F40A1DBB67D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D29E4CEA-8464-4A9A-823F-90B5DF1DBD47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D29E4CEA-8464-4A9A-823F-90B5DF1DBD47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D29E4CEA-8464-4A9A-823F-90B5DF1DBD47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D29E4CEA-8464-4A9A-823F-90B5DF1DBD47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
