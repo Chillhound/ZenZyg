@@ -75,6 +75,20 @@ using ZenZygClient.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\_Imports.razor"
+using Radzen;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 11 "C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\_Imports.razor"
+using Radzen.Blazor;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -83,6 +97,30 @@ using ZenZygClient.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 31 "C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\Pages\Index.razor"
+          
+        private Shop[] shops;
+
+        protected override async Task OnInitializedAsync()
+        {
+            shops = await _client.GetFromJsonAsync<Shop[]>("sample-data/shops.json");
+        }
+
+        public class Shop
+        {
+            public string Navn { get; set; }
+
+            public int Distance { get; set; }
+
+            public string Ejer { get; set; }
+        }
+    
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient _client { get; set; }
     }
 }
 #pragma warning restore 1591

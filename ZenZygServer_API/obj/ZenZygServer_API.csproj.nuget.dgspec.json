@@ -74,6 +74,10 @@
               "target": "Package",
               "version": "[1.4.1, )"
             },
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[2.17.11, )"
+            },
             "xunit": {
               "target": "Package",
               "version": "[2.4.1, )"

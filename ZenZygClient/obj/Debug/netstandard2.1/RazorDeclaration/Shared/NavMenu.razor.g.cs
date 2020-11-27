@@ -75,6 +75,20 @@ using ZenZygClient.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\_Imports.razor"
+using Radzen;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 11 "C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\_Imports.razor"
+using Radzen.Blazor;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -83,7 +97,7 @@ using ZenZygClient.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\Shared\NavMenu.razor"
+#line 18 "C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

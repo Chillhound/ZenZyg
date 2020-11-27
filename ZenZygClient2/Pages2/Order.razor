@@ -1,0 +1,47 @@
+﻿@page "/order"
+<h3>Ordering page</h3>
+
+<div class="row mb-3">
+    <div class="col-md-8 themed-grid-col">
+        <div class="col-md-6 p-5 text-center">
+            <h4>placeholder navn for butik</h4>
+            <div class="mt-5">
+                <label for="in-queue">People in queue</label>
+                <input type="text" class="form-control-plaintext text-center" readonly id="in-queue" value="xxx"/>
+            </div>
+
+            <div class="mt-2">
+                <label for="estimated-time">estimated waiting time</label>
+                <input type="text" class="form-control-plaintext text-center" readonly id="estimated-time" value="xxx"/>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-md-4 themed-grid-col">
+        <div class="col-md-4 p-2">
+            <h5>Preorder timeslot</h5>
+            <div class="p-2">
+                <label for="time">Input timeslot</label>
+                <input type="time" id="time" />
+            </div>
+            
+            <div class="p-2">
+                <label for="date">Input date</label>
+                <input type="date" id="date" />
+            </div>
+            
+            <a href="/confirmation" class="btn btn-primary ml-2" role="button">Book timeslot</a>
+        </div>
+
+        <div class="col-md-4 p-2 pt-5">
+            <h5>Book timeslot now</h5>
+            <div class="p-2">
+                <a href="/confirmation" class="btn btn-primary" role="button">Book timeslot</a>
+            </div>
+            
+        </div> 
+    </div>
+</div>
+
+@code {
+
+}

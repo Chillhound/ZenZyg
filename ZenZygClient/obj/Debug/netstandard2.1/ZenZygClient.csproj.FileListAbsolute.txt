@@ -959,3 +959,7 @@ C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\obj\Debug\netstandard2.1\integrity\AP
 C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\obj\Debug\netstandard2.1\integrity\QC2lFdhGg2mRa2tR3yhZ47dJn2L5nn4cRFtCHgTXc2c=.hash
 C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\obj\Debug\netstandard2.1\integrity\KdBu9pDaNpQ6g4q-R4A_Y3dgOXP71zEgw3q9WuhPmnA=.hash
 C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\obj\Debug\netstandard2.1\integrity\4tFX_ezk-_g-UC3ve3gtiov1yHw6YlmmRiVU0VKgo2Q=.hash
+C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Confirmation.razor.g.cs
+C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\obj\Debug\netstandard2.1\RazorDeclaration\Pages\EditDepartment.razor.g.cs
+C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\obj\Debug\netstandard2.1\RazorDeclaration\Pages\ManagerPage.razor.g.cs
+C:\Users\mathi\Desktop\ZenZyg\ZenZygClient\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Order.razor.g.cs
