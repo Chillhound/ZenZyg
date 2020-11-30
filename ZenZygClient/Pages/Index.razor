@@ -1,26 +1,30 @@
 ﻿@page "/"
 @inject HttpClient _client;
 <h1>Supermarked</h1>
-<h2> Brah vlekommen til hovedsiden :*</h2>
+
 
 
     @if (shops != null)
     {
-        @foreach (var shop in shops)
-        {
-            <div class="card">
-                <div class="shop card-body">
-                    <div class="card-title">
-                        <p>@shop.Navn</p>
-                    </div>
+        <div class="container">
+            <div class="row">
+                @foreach (var shop in shops)
+                {
+                    <div class="card">
+                        <div class="shop card-body">
+                            <div class="card-title">
+                                <p>@shop.Navn</p>
+                            </div>
 
-                    <div class="card-text">
-                        <a href="/order" class="btn btn-link stretched-link"></a>
-                        <p>@shop.Distance km</p>
+                            <div class="card-text">
+                                <a href="/order" class="btn btn-link stretched-link"></a>
+                                <p>@shop.Distance km</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                }
             </div>
-        }
+        </div>
      }
     else
     {
@@ -45,5 +49,5 @@
             public string Ejer { get; set; }
         }
     }
-    }
+    
 

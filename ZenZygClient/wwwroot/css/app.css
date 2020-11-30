@@ -141,6 +141,10 @@ app {
     .main .top-row a, .main .top-row .btn-link {
         margin-left: 0;
     }
+    .card {
+        width: 100%;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -173,4 +177,5 @@ app {
         /* Never collapse the sidebar for wide screens */
         display: block;
     }
+
 }
