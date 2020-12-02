@@ -8,7 +8,6 @@ using System.Net;
 using System.Threading.Tasks;
 using ZenZygServer_API.Entities;
 using ZenZygServer_API.Models;
-using ZenZygServer_API.Models.DTO;
 
 namespace ZenZygServer_API.Controllers
 {
@@ -56,7 +55,8 @@ namespace ZenZygServer_API.Controllers
             return TicketDetails;
         }
 
-        [HttpDelete("{Id}")]
+        //[HttpDelete("{Id}")]
+        [Route("delete/{id:int}")]
         public async Task<IActionResult> Delete(int id)
         {
             var TicketDetails = await _repository.Delete(id);

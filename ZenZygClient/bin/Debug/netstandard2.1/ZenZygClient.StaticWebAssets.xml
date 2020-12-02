@@ -1,4 +1,4 @@
 ﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\bin\Debug\netstandard2.1\wwwroot\" />
-  <ContentRoot BasePath="_content/Radzen.Blazor" Path="C:\Users\mikke\.nuget\packages\radzen.blazor\2.17.11\build\..\staticwebassets\" />
+  <ContentRoot BasePath="/" Path="/Users/anesskrijelj/GitHub/Personal/ZenZygBackup/ZenZygClient/bin/Debug/netstandard2.1/wwwroot/" />
+  <ContentRoot BasePath="_content/Radzen.Blazor" Path="/Users/anesskrijelj/.nuget/packages/radzen.blazor/2.17.11/build/../staticwebassets/" />
 </StaticWebAssets>

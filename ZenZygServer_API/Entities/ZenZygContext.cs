@@ -31,7 +31,8 @@ namespace ZenZygServer_API.Entities
             if (!optionsBuilder.IsConfigured)
             {
                 //Replace connectinstring with own path
-                optionsBuilder.UseSqlite(@"Data Source=\Users\mathi\Desktop\ZenZyg\ZenZygServer_API\test.db");
+                optionsBuilder.UseSqlite(@"Data Source=/Brugere/anesskrijelj/GitHub/Personal/ZenZygBackup/ZenZygServer_API/test.db");
+
             }
 
             /*
@@ -46,7 +47,8 @@ namespace ZenZygServer_API.Entities
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            
+            modelBuilder.Entity<Ticket>().HasIndex(s => s.Id).IsUnique().IncludeProperties(s => new { s.CustomerId, s.StoreId});
+
         }
     }
     

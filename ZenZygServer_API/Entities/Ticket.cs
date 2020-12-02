@@ -4,7 +4,7 @@ namespace ZenZygServer_API.Entities {
     public class Ticket 
     {
      
-        public int TicketId { get; set; }
+        public int Id { get; set; }
         [Required]
         public int? StoreId { get; set; }
         [Required]

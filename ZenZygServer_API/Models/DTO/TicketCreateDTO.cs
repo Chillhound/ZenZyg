@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 
-namespace ZenZygServer_API.Models.DTO
+namespace ZenZygServer_API.Models
 {
     public class TicketCreateDTO
     {
