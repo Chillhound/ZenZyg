@@ -25,19 +25,20 @@ namespace ZenZygServer_API.Controllers
         }
 
         // Post: ApiController/Create
-        [HttpPost]
-      //  [Route("createticket")]
+        [Route("createticket/store/{storeID:int}/customer/{customerID:int}")]
+        //[HttpPost]
         public async Task<IActionResult> CreateTicket(int storeID, int customerID) 
         {
+            
             TicketCreateDTO ticketCreateDTO = new TicketCreateDTO
             {
                 CustomerId = customerID,
                 StoreId = storeID
             };
-
+            
             int id = await _repository.Create(ticketCreateDTO);
-            return CreatedAtAction(nameof(Get), new { id }, default);
-       
+            //return CreatedAtAction(nameof(Get), new { id }, default);
+            return Ok();
         }
 
 
