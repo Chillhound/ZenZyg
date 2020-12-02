@@ -8467,25 +8467,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mathi\\.nuget\\packages\\": {},
-    "E:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\mikke\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mathi\\Desktop\\ZenZyg\\ZenZygServer_API\\ZenZygServer_API.csproj",
+      "projectUniqueName": "C:\\Users\\mikke\\OneDrive\\Dokumenter\\3. semester\\BDSA projekt\\ZenzygBDSA_Projekt\\ZenZygServer_API\\ZenZygServer_API.csproj",
       "projectName": "ZenZygServer_API",
-      "projectPath": "C:\\Users\\mathi\\Desktop\\ZenZyg\\ZenZygServer_API\\ZenZygServer_API.csproj",
-      "packagesPath": "C:\\Users\\mathi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mathi\\Desktop\\ZenZyg\\ZenZygServer_API\\obj\\",
+      "projectPath": "C:\\Users\\mikke\\OneDrive\\Dokumenter\\3. semester\\BDSA projekt\\ZenzygBDSA_Projekt\\ZenZygServer_API\\ZenZygServer_API.csproj",
+      "packagesPath": "C:\\Users\\mikke\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mikke\\OneDrive\\Dokumenter\\3. semester\\BDSA projekt\\ZenzygBDSA_Projekt\\ZenZygServer_API\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "E:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\mathi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\mikke\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

@@ -4,32 +4,68 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using ZenZygServer_API.Entities;
 using ZenZygServer_API.Models;
+using ZenZygServer_API.Models.DTO;
 
 namespace ZenZygServer_API.Controllers
 {
+
+    [ApiController]
+    [Route("[controller]")]
     public class TicketController : Controller
     {
         private readonly ITicketRepository _repository;
-        private readonly ZenZygContext _context;
-        private readonly SqliteConnection _connection;
+      
         public TicketController(ITicketRepository repository )
         {
+            _repository = repository;
+        }
 
-            //string connection = @"Data Source=\Users\mathi\Desktop\ZenZyg\ZenZyg.Tests\test.db";
-            _connection = new SqliteConnection("Filename =:memory:");
-            _connection.Open();
-            var builder = new DbContextOptionsBuilder<ZenZygContext>().UseSqlite(_connection);
-            _context = new ZenZygContext(builder.Options);
-            _context.Database.EnsureCreated();
+        // Post: ApiController/Create
+        [HttpPost]
+      //  [Route("createticket")]
+        public async Task<IActionResult> CreateTicket(int storeID, int customerID) 
+        {
+            TicketCreateDTO ticketCreateDTO = new TicketCreateDTO
+            {
+                CustomerId = customerID,
+                StoreId = storeID
+            };
 
-            _repository = new TicketRepository(_context);
+            int id = await _repository.Create(ticketCreateDTO);
+            return CreatedAtAction(nameof(Get), new { id }, default);
+       
         }
 
 
+        // GET: Ticket
+        [HttpGet("{id}", Name = "GetTicket")]
+        public async Task<ActionResult<TicketDetailsDTO>> Get(int id)
+        {
+            var TicketDetails = await _repository.Read(id);
 
+            if (TicketDetails == null)
+            {
+                return NotFound();
+            }
 
+            return TicketDetails;
+        }
+
+        [HttpDelete("{Id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var TicketDetails = await _repository.Delete(id);
+
+            if (TicketDetails == HttpStatusCode.NotFound)
+            {
+                return NotFound();
+            }
+            
+            return Ok();
+        }
     }
 }

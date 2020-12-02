@@ -77,7 +77,5 @@ namespace ZenZygServer_API.Models
             await _context.SaveChangesAsync();
             return HttpStatusCode.NoContent;
         }
-
-       
     }
 }

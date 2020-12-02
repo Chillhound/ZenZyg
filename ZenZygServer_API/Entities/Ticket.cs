@@ -3,19 +3,15 @@ using System.ComponentModel.DataAnnotations;
 namespace ZenZygServer_API.Entities { 
     public class Ticket 
     {
-       [Required]
-        public string phoneNumber { get; set; }
-        
+     
         public int TicketId { get; set; }
-
+        [Required]
         public int? StoreId { get; set; }
-
+        [Required]
         public string QRData { get; set; }
-
-        public int NumberInQueue { get; set; }
-
+        [Required]
         public int? CustomerId { get; set; }
-        public Customer Customer { get; set; }
+      
         
     }
 }
