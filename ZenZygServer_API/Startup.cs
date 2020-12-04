@@ -33,7 +33,7 @@ namespace ZenZygServer_API
             services.AddScoped<ICustomerRepository, CustomerRepository>();
             services.AddScoped<IStoreRepository, StoreRepository>();
             services.AddScoped<ITicketRepository, TicketRepository>();
-            services.AddScoped<IStoreRepository, StoreRepository>();
+            services.AddScoped<IStoreManagerRepository, StoreManagerRepository>();
             services.AddControllers();
           
         }

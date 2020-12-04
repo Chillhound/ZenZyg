@@ -1,6 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.Sqlite;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using ZenZygServer_API.Entities;
 using ZenZygServer_API.Models;
 
 namespace ZenZygServer_API.Controllers
@@ -17,9 +23,25 @@ namespace ZenZygServer_API.Controllers
             _repository = repository;
         }
 
+        //[HttpPost]
+        //  https://localhost:44361/customer/createCustomer/name/bob/phonenumber/36
+        [Route("createcustomer/name/{name}/phonenumber/{phonenumber}")]
+        public async Task<IActionResult> Create(string name,string phonenumber)
+        {
+            CustomerCreateDTO customer = new CustomerCreateDTO
+            {
+               Name = name,
+               PhoneNumber = phonenumber
+            };
+            int id = await _repository.Create(customer);
+
+            return Ok();
+        }
+
         // GET: Customer
         [HttpGet("{id}", Name = "GetCustomer")]
-        public async Task<ActionResult<CustomerDetailsDTO>> Get(int id)
+        // https://localhost:44361/customer/1
+        public async Task<ActionResult<CustomerDetailsDTO>> Read(int id)
         {
             var customerDetails = await _repository.Read(id);
 
@@ -31,20 +53,18 @@ namespace ZenZygServer_API.Controllers
             return customerDetails;
         }
 
-        // POST: tags
-        [HttpPost]
-        public async Task<IActionResult> Post([FromBody] CustomerCreateDTO customer)
+        //[HttpPut("{id}")]
+        [Route("updateCustomer/id/{id}/name/{name}/phonenumber/{phonenumber}")]
+        // https://localhost:44361/customer/updateCustomer/id/1/name/tom/phonenumber/334535
+        public async Task<IActionResult> Update(int id, string name, string phonenumber)
         {
-            var id = await _repository.Create(customer);
+            var updateDTO = new CustomerUpdateDTO {
+                CustomerId = id,
+                Name = name,
+                PhoneNumber = phonenumber
+            };
 
-            return CreatedAtAction(nameof(Get), new { id }, default);
-        }
-
-        // PUT: tags/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, [FromBody] CustomerUpdateDTO customer)
-        {
-            var response = await _repository.Update(customer);
+            var response = await _repository.Update(updateDTO);
             if (response == HttpStatusCode.NotFound)
             {
                 return NotFound();
@@ -52,8 +72,9 @@ namespace ZenZygServer_API.Controllers
             return  Ok(); 
         }
 
-        // DELETE: tags/5
         [HttpDelete("{id}")]
+        [Route("delete/{id:int}")]
+        // https://localhost:44361/customer/delete/1
         public async Task<IActionResult> Delete(int id)
         {
              var response = await _repository.Delete(id);

@@ -6,7 +6,7 @@ namespace ZenZygServer_API.Models
 {
     public interface ICustomerRepository
     {
-        Task<HttpStatusCode> Create (CustomerCreateDTO Customer);
+        Task<int> Create (CustomerCreateDTO Customer);
         Task<CustomerDetailsDTO> Read (int CustomerId);
         Task<HttpStatusCode> Update (CustomerUpdateDTO Customer);
         Task<HttpStatusCode> Delete (int CustomerId);

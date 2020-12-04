@@ -26,7 +26,7 @@ namespace ZenZygServer_API.Controllers
         // Post: ApiController/Create
         [Route("createticket/store/{storeID:int}/customer/{customerID:int}")]
         //[HttpPost]
-        public async Task<IActionResult> CreateTicket(int storeID, int customerID) 
+        public async Task<IActionResult> Create(int storeID, int customerID) 
         {
             
             TicketCreateDTO ticketCreateDTO = new TicketCreateDTO
@@ -43,7 +43,7 @@ namespace ZenZygServer_API.Controllers
 
         // GET: Ticket
         [HttpGet("{id}", Name = "GetTicket")]
-        public async Task<ActionResult<TicketDetailsDTO>> Get(int id)
+        public async Task<ActionResult<TicketDetailsDTO>> Read(int id)
         {
             var TicketDetails = await _repository.Read(id);
 

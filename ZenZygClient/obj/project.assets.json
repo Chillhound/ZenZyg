@@ -8780,24 +8780,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/anesskrijelj/.nuget/packages/": {}
+    "C:\\Users\\mikke\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/anesskrijelj/GitHub/Personal/ZenZygBackup/ZenZygClient/ZenZygClient.csproj",
+      "projectUniqueName": "C:\\Users\\mikke\\OneDrive\\Dokumenter\\3. semester\\BDSA projekt\\ZenzygBDSA_Projekt\\ZenZygClient\\ZenZygClient.csproj",
       "projectName": "ZenZygClient",
-      "projectPath": "/Users/anesskrijelj/GitHub/Personal/ZenZygBackup/ZenZygClient/ZenZygClient.csproj",
-      "packagesPath": "/Users/anesskrijelj/.nuget/packages/",
-      "outputPath": "/Users/anesskrijelj/GitHub/Personal/ZenZygBackup/ZenZygClient/obj/",
+      "projectPath": "C:\\Users\\mikke\\OneDrive\\Dokumenter\\3. semester\\BDSA projekt\\ZenzygBDSA_Projekt\\ZenZygClient\\ZenZygClient.csproj",
+      "packagesPath": "C:\\Users\\mikke\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mikke\\OneDrive\\Dokumenter\\3. semester\\BDSA projekt\\ZenzygBDSA_Projekt\\ZenZygClient\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/anesskrijelj/.config/NuGet/NuGet.Config"
+        "C:\\Users\\mikke\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8876,7 +8878,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

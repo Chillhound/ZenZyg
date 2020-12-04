@@ -16,7 +16,7 @@ namespace ZenZygServer_API.Models
             _context = context;
         }
 
-        public async Task<HttpStatusCode> Create(StoreCreateDTO Store)
+        public async Task<int> Create(StoreCreateDTO Store)
         {
             var entity = new Store
             {
@@ -27,7 +27,7 @@ namespace ZenZygServer_API.Models
             };
             _context.Stores.Add(entity);
             await _context.SaveChangesAsync();
-            return HttpStatusCode.Created;
+            return entity.StoreId;
         }
 
         public async Task<StoreDetailsDTO> Read(int StoreId)

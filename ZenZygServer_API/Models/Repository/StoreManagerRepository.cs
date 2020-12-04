@@ -17,7 +17,7 @@ namespace ZenZygServer_API.Models
             _context = context;
         }
 
-        public async Task<HttpStatusCode> Create(StoreManagerCreateDTO StoreManager)
+        public async Task<int> Create(StoreManagerCreateDTO StoreManager)
         {
             var entity = new StoreManager
             {
@@ -29,7 +29,7 @@ namespace ZenZygServer_API.Models
             _context.StoreManagers.Add(entity);
             await _context.SaveChangesAsync();
 
-            return HttpStatusCode.Created;
+            return entity.StoreManagerId;
         }
 
         public async Task<StoreManagerDetailsDTO> Read(int StoreManagerId)
