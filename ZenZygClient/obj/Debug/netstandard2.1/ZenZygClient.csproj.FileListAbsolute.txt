@@ -1955,9 +1955,9 @@ C:/Users/mikke/OneDrive/Dokumenter/3. semester/BDSA projekt/ZenzygBDSA_Projekt/Z
 /Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/Debug/netstandard2.1/Razor/Pages/EditDepartment.razor.g.cs
 /Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/Debug/netstandard2.1/Razor/Pages/ManagerPage.razor.g.cs
 /Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/Debug/netstandard2.1/Razor/Pages/Order.razor.g.cs
-/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/Debug/netstandard2.1/integrity/bhcyKXyjl2bKAZkeCe4psuHncInhWUPv2m_bXkgUygQ=.hash
 /Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/Debug/netstandard2.1/integrity/M1pYQBRnwZmTq5CodeZxTzsPoWvxBmTSTyy3y0pe8P0=.hash
 /Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/Debug/netstandard2.1/integrity/APJhF7Cne1YtXAEDjYtS_NC54Yt8Uy4W364YV6GfInE=.hash
 /Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/Debug/netstandard2.1/integrity/QC2lFdhGg2mRa2tR3yhZ47dJn2L5nn4cRFtCHgTXc2c=.hash
-/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/Debug/netstandard2.1/integrity/SdGkR1GQOYTQJxECZzVzRJrrlqcodHLzLEWKr0LgokU=.hash
-/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/Debug/netstandard2.1/integrity/GKdu4oC3gIw0-txErLLGGqP6qI-jJ79FB1rvBC1Yovk=.hash
+/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/Debug/netstandard2.1/integrity/quTApqNPBRj2zf32Ayd_ENNAimQ7taZkujVTQKWJr-A=.hash
+/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/Debug/netstandard2.1/integrity/vGHphikQKIWIMBKb9EoYNsoaYMT6zlDRaEt5J_ba3bw=.hash
+/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/Debug/netstandard2.1/integrity/Ip8iA3_0X1GW0p-A1SwDRVkR9VMDaVskNRmIdOOytJw=.hash

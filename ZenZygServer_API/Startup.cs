@@ -28,6 +28,15 @@ namespace ZenZygServer_API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsApi",
+                    builder => builder.WithOrigins("https://localhost:6001", "https://localhost:5001")
+                .AllowAnyHeader()
+                .AllowAnyMethod());
+            });
+
+
             services.AddDbContext<ZenZygContext>(o => o.UseSqlite("Filename=test.db"));
             services.AddScoped<IZenZygContext, ZenZygContext>();
             services.AddScoped<ICustomerRepository, CustomerRepository>();
@@ -35,7 +44,7 @@ namespace ZenZygServer_API
             services.AddScoped<ITicketRepository, TicketRepository>();
             services.AddScoped<IStoreManagerRepository, StoreManagerRepository>();
             services.AddControllers();
-          
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,9 +55,12 @@ namespace ZenZygServer_API
                 app.UseDeveloperExceptionPage();
             }
 
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors("CorsApi");
 
             app.UseAuthorization();
 

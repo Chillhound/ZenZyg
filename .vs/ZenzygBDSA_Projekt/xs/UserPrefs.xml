@@ -1,19 +1,19 @@
-﻿<Properties StartupConfiguration="{BF7DBB42-4170-4FB6-86A9-722F2160F69A}|Default">
+﻿<Properties StartupConfiguration="ZenZyg_All">
   <MonoDevelop.Ide.ItemProperties.ZenZygServer__API PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.ZenZygClient PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ZenZygServer_API/Controllers/StoreController.cs">
-    <Files>
-      <File FileName="ZenZygServer_API/Controllers/CustomerController.cs" Line="1" Column="1" />
-      <File FileName="ZenZygServer_API/Controllers/StoreController.cs" Line="27" Column="121" />
-      <File FileName="ZenZygServer_API/Properties/launchSettings.json" Line="8" Column="23" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ZenzygBDSA_Projekt" expanded="True">
+            <Node name="ZenZygClient" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="Pages" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
             <Node name="ZenZygServer_API" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="StoreController.cs" selected="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Repository" expanded="True" />
               </Node>
               <Node name="Properties" expanded="True" />
             </Node>

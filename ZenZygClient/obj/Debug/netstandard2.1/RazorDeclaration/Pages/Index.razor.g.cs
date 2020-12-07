@@ -89,6 +89,13 @@ using Radzen.Blazor;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/Pages/Index.razor"
+using ZenZygClient.Models;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -98,23 +105,16 @@ using Radzen.Blazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 35 "/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/Pages/Index.razor"
+#line 38 "/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/Pages/Index.razor"
           
-        private Shop[] shops;
+        private StoreViewModel[] stores;
 
         protected override async Task OnInitializedAsync()
         {
-            shops = await _client.GetFromJsonAsync<Shop[]>("sample-data/shops.json");
+            stores = await _client.GetFromJsonAsync<StoreViewModel[]>("store/all");
         }
 
-        public class Shop
-        {
-            public string Navn { get; set; }
 
-            public int Distance { get; set; }
-
-            public string Ejer { get; set; }
-        }
     
 
 #line default

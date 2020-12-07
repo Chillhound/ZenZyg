@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -12,6 +13,8 @@ using ZenZygServer_API.Models;
 namespace ZenZygServer_API.Controllers
 {
     [ApiController]
+    [Produces("application/json")]
+    [EnableCors("CorsApi")]
     [Route("[controller]")]
     public class StoreController : Controller
     {
@@ -56,6 +59,7 @@ namespace ZenZygServer_API.Controllers
         }
         
         [Route("all")]
+        [HttpGet]
         public async Task<ActionResult<IEnumerable<StoreListDTO>>> Read() 
         {
             return await _repository.ReadAll().ToListAsync();
