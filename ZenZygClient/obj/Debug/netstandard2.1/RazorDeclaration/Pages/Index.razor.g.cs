@@ -98,7 +98,7 @@ using Radzen.Blazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 31 "C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\Pages\Index.razor"
+#line 35 "C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\Pages\Index.razor"
           
         private Shop[] shops;
 

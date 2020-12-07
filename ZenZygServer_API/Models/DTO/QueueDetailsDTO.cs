@@ -1,18 +1,15 @@
-using System.ComponentModel.DataAnnotations;
-using System.Collections.Generic;
+﻿using System;
 using System.Collections;
-using System;
+using System.Threading.Tasks;
 
-namespace ZenZygServer_API.Entities
+namespace ZenZygServer_API.Models.DTO
 {
-    public class Queue
+    public class QueueDetailsDTO
     {
         public int Id { get; set; }
 
         public int StoreId { get; set; }
 
         public ArrayList TicketQueue { get; set; }
-
     }
-    
 }

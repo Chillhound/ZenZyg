@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\evbEHjIUtkQ5bRpRGfqd0pDkIGT1UfCttU4JMUkrMcs=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\nMStkzYL194PaHD5ueaQXvb1gZEWaU_mt9cKlrsiWbU=.hash",
       "Source": "C:\\Users\\mikke\\OneDrive\\Dokumenter\\3. semester\\BDSA projekt\\ZenzygBDSA_Projekt\\ZenZygClient\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\ZenZygClient.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/ZenZygClient.dll.gz"
     },
@@ -321,7 +321,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\suAqKfaCqUsqUZPSUVbig1LSGbr9YFj6isQ1fZW10ow=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\suCVRCazsAWYXXRbfd7ex4S9tE5GrxaTX0_tP4mGvMo=.hash",
       "Source": "C:\\Users\\mikke\\OneDrive\\Dokumenter\\3. semester\\BDSA projekt\\ZenzygBDSA_Projekt\\ZenZygClient\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\ZenZygClient.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/ZenZygClient.pdb.gz"
     },
@@ -346,7 +346,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\tppE-K2nQiA9OqyUoIv-amsf22dWHtUzfOorgKdwRBI=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\cwZSXBhOokp9dPggtSejSGVD2lZFMBkQmhtFAmW8n7o=.hash",
       "Source": "C:\\Users\\mikke\\OneDrive\\Dokumenter\\3. semester\\BDSA projekt\\ZenzygBDSA_Projekt\\ZenZygClient\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
     }
