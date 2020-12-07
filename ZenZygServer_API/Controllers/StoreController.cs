@@ -54,6 +54,12 @@ namespace ZenZygServer_API.Controllers
 
             return storeDetails;
         }
+        
+        [Route("all")]
+        public async Task<ActionResult<IEnumerable<StoreListDTO>>> Read() 
+        {
+            return await _repository.ReadAll().ToListAsync();
+        }
 
 
         // PUT: tags/5

@@ -30,7 +30,7 @@ namespace ZenZyg.Tests.ZenZygServer_API.Models.Tests
             
 
         }
-
+        /*
         [Fact]
         public async Task Create_Customer_returns_httpstatus_created()
         {
@@ -145,7 +145,7 @@ namespace ZenZyg.Tests.ZenZygServer_API.Models.Tests
 
             Assert.Equal(HttpStatusCode.NoContent, result);
         }
-
+        */
         public void Dispose()
         {
             

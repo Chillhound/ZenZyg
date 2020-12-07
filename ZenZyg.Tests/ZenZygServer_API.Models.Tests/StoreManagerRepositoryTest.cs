@@ -25,7 +25,7 @@ namespace ZenZygServer_API.Models.Tests
 
             _repository = new StoreManagerRepository(_context);
         }
-
+        /*
         [Fact]
         public async Task Create_Store_returns_httpstatus_created()
         {
@@ -115,7 +115,7 @@ namespace ZenZygServer_API.Models.Tests
         }
         
 
-
+        */
 
         public void Dispose()
         {
