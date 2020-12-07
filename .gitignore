@@ -2,6 +2,11 @@
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudio,visualstudiocode,csharp,aspnetcore,dotnetcore,vscode,vs
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudio,visualstudiocode,csharp,aspnetcore,dotnetcore,vscode,vs
 
+###Folders###
+*/bin/*
+*/obj/*
+.vs/*
+
 ##DS_STORE##
 *.DS_Store
 
