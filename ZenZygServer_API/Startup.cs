@@ -14,6 +14,7 @@ using Microsoft.Extensions.Logging;
 using ZenZygServer_API.Entities;
 using ZenZygServer_API.Models;
 
+
 namespace ZenZygServer_API
 {
     public class Startup
@@ -28,12 +29,13 @@ namespace ZenZygServer_API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ZenZygContext>(o => o.UseSqlite("Filename=test.db"));
+            services.AddDbContext<ZenZygContext>(o => o.UseSqlite("Filename=test2.db"));
             services.AddScoped<IZenZygContext, ZenZygContext>();
             services.AddScoped<ICustomerRepository, CustomerRepository>();
             services.AddScoped<IStoreRepository, StoreRepository>();
             services.AddScoped<ITicketRepository, TicketRepository>();
             services.AddScoped<IStoreManagerRepository, StoreManagerRepository>();
+            services.AddScoped<IQueueRepository, QueueRepository>();
             services.AddControllers();
           
         }

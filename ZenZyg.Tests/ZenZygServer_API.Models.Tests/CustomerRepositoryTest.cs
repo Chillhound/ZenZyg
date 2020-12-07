@@ -42,7 +42,7 @@ namespace ZenZyg.Tests.ZenZygServer_API.Models.Tests
 
             var entity = await _repository.Create(customer);
 
-            Assert.Equal(HttpStatusCode.Created, entity);
+            Assert.Equal(1, entity);
         }
 
         [Fact]

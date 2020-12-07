@@ -17,16 +17,19 @@ namespace ZenZygServer_API.Controllers
     public class TicketController : Controller
     {
         private readonly ITicketRepository _repository;
-      
-        public TicketController(ITicketRepository repository )
+        private readonly IQueueRepository _repositoryQueue;
+
+        public TicketController(ITicketRepository repository, IQueueRepository repository1 )
         {
             _repository = repository;
+            _repositoryQueue = repository1;
+
         }
 
         // Post: ApiController/Create
         [Route("createticket/store/{storeID:int}/customer/{customerID:int}")]
         //[HttpPost]
-        public async Task<IActionResult> Create(int storeID, int customerID) 
+        public async Task<int> Create(int storeID, int customerID) 
         {
             
             TicketCreateDTO ticketCreateDTO = new TicketCreateDTO
@@ -36,8 +39,9 @@ namespace ZenZygServer_API.Controllers
             };
             
             int id = await _repository.Create(ticketCreateDTO);
+            await _repositoryQueue.EnterQueue(id);
             //return CreatedAtAction(nameof(Get), new { id }, default);
-            return Ok();
+            return id;
         }
 
 

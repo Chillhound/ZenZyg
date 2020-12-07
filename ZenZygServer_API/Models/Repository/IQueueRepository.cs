@@ -11,8 +11,11 @@ namespace ZenZygServer_API.Models
     {
         Task<int> Create(QueueCreateDTO Customer);
         Task<QueueDetailsDTO> Read(int Id);
-        Task<HttpStatusCode> Update(QueueUpdateDTO Queue);
-      //  Task<HttpStatusCode> Delete(int CustomerId);
+        //Task<HttpStatusCode> Update(QueueUpdateDTO Queue);
+        //  Task<HttpStatusCode> Delete(int CustomerId);
+
+        Task<HttpStatusCode> EnterQueue(int ticketId);
+        Task<HttpStatusCode> ExitQueue(int ticketId);
 
     }
 }

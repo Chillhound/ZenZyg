@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace ZenZygServer_API.Models.DTO
@@ -10,6 +11,6 @@ namespace ZenZygServer_API.Models.DTO
 
         public int StoreId { get; set; }
 
-        public ArrayList TicketQueue { get; set; }
+        public Queue<int> TicketQueue { get; set; }
     }
 }

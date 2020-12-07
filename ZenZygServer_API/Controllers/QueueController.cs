@@ -23,6 +23,7 @@ namespace ZenZygServer_API.Controllers
         }
 
         //Route needed
+        [Route("createqueue/store/{storeId:int}")]
         public async Task<IActionResult> Create(int storeId)
         {
             QueueCreateDTO queue = new QueueCreateDTO
@@ -47,7 +48,7 @@ namespace ZenZygServer_API.Controllers
 
             return queueDetails;
         }
-
+        /*
         public async Task<IActionResult> EnterQueue(int id, int ticketID)  
         {  
             
@@ -58,6 +59,7 @@ namespace ZenZygServer_API.Controllers
         { 
         
         }
+        
         //Route needed
         public async Task<IActionResult> Update(int id)
         {
@@ -81,5 +83,6 @@ namespace ZenZygServer_API.Controllers
             }
             return Ok();
         }
+        */
     }
 }

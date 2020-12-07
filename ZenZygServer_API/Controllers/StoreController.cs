@@ -24,7 +24,7 @@ namespace ZenZygServer_API.Controllers
 
         // POST: tags
         //[HttpPost]
-        // https://localhost:44361/store/createstore/name/Netto/storemanagerid/12/size/1.23/address/john madsens vej 420
+        // https://localhost:44361/store/createstore/name/Netto/storemanager/12/size/1.23/address/john madsens vej 420
         [Route("createStore/name/{name}/storeManager/{storeManagerId:int?}/size/{size:double}/address/{address}")]
         public async Task<IActionResult> Create(string name, int? storeManagerId, double size, string address)
         {

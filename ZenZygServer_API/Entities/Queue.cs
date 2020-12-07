@@ -2,6 +2,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
 using System.Collections;
 using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ZenZygServer_API.Entities
 {
@@ -10,8 +11,9 @@ namespace ZenZygServer_API.Entities
         public int Id { get; set; }
 
         public int StoreId { get; set; }
-
-        public ArrayList TicketQueue { get; set; }
+        
+        [NotMapped]
+        public Queue<int> TicketQueue { get; set; }
 
     }
     

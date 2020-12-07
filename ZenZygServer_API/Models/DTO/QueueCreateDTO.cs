@@ -11,6 +11,6 @@ namespace ZenZygServer_API.Models.DTO
     {
         public int StoreId { get; set; }
 
-        public virtual ArrayList TicketQueue { get; set; } = new ArrayList();
+        public virtual Queue<int> TicketQueue { get; set; }
     }
 }
