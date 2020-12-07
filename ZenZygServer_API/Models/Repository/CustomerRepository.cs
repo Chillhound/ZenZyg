@@ -18,7 +18,7 @@ namespace ZenZygServer_API.Models
         }
 
 
-        public async Task<HttpStatusCode> Create(CustomerCreateDTO Customer)
+        public async Task<int> Create(CustomerCreateDTO Customer)
         {
             var entity = new Customer
             {
@@ -26,10 +26,10 @@ namespace ZenZygServer_API.Models
                 PhoneNumber = Customer.PhoneNumber
             };
 
-            _context.Customers.Add(entity);
+             _context.Customers.Add(entity);
             await _context.SaveChangesAsync();
 
-            return HttpStatusCode.Created; //Maybe return ID if needed instead
+            return entity.CustomerId; //Maybe return ID if needed instead
         }
 
         public async Task<CustomerDetailsDTO> Read(int CustomerId)
@@ -77,7 +77,5 @@ namespace ZenZygServer_API.Models
             await _context.SaveChangesAsync();
             return HttpStatusCode.NoContent;
         }
-
-       
     }
 }

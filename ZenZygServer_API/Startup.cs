@@ -6,10 +6,13 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using ZenZygServer_API.Entities;
+using ZenZygServer_API.Models;
 
 namespace ZenZygServer_API
 {
@@ -25,7 +28,14 @@ namespace ZenZygServer_API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<ZenZygContext>(o => o.UseSqlite("Filename=test.db"));
+            services.AddScoped<IZenZygContext, ZenZygContext>();
+            services.AddScoped<ICustomerRepository, CustomerRepository>();
+            services.AddScoped<IStoreRepository, StoreRepository>();
+            services.AddScoped<ITicketRepository, TicketRepository>();
+            services.AddScoped<IStoreManagerRepository, StoreManagerRepository>();
             services.AddControllers();
+          
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +56,11 @@ namespace ZenZygServer_API
             {
                 endpoints.MapControllers();
             });
+
+            var serviceScopeFactory = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>();
+            using var serviceScope = serviceScopeFactory.CreateScope();
+            var dbContext = serviceScope.ServiceProvider.GetService<ZenZygContext>();
+            dbContext.Database.EnsureCreated();
         }
     }
 }
