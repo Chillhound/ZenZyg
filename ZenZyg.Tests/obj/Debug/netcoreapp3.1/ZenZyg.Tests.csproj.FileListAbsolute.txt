@@ -345,3 +345,9 @@ C:/Users/mathi/Desktop/ZenZyg/ZenZyg.Tests/obj/Debug/netcoreapp3.1/ZenZyg.Tests.
 /Users/anesskrijelj/GitHub/Personal/ZenZygBackup/ZenZyg.Tests/bin/Debug/netcoreapp3.1/ZenZygServer_API.pdb
 /Users/anesskrijelj/GitHub/Personal/ZenZygBackup/ZenZyg.Tests/obj/Debug/netcoreapp3.1/ZenZyg.Tests.csproj.CopyComplete
 /Users/anesskrijelj/GitHub/Personal/ZenZygBackup/ZenZyg.Tests/obj/Debug/netcoreapp3.1/ZenZyg.Tests.genruntimeconfig.cache
+/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZyg.Tests/obj/Debug/netcoreapp3.1/ZenZyg.Tests.csprojAssemblyReference.cache
+/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZyg.Tests/obj/Debug/netcoreapp3.1/ZenZyg.Tests.AssemblyInfoInputs.cache
+/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZyg.Tests/obj/Debug/netcoreapp3.1/ZenZyg.Tests.AssemblyInfo.cs
+/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZyg.Tests/obj/Debug/netcoreapp3.1/ZenZyg.Tests.csproj.CoreCompileInputs.cache
+/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZyg.Tests/obj/Debug/netcoreapp3.1/ZenZyg.Tests.dll
+/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZyg.Tests/obj/Debug/netcoreapp3.1/ZenZyg.Tests.pdb
