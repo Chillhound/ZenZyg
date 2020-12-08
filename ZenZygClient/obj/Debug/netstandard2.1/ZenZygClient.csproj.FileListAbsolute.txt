@@ -1728,7 +1728,6 @@ C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\Z
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\Razor\Shared\SurveyPrompt.razor.g.cs
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\Razor\_Imports.razor.g.cs
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\blazor\unlinked.output
-C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\integrity\evbEHjIUtkQ5bRpRGfqd0pDkIGT1UfCttU4JMUkrMcs=.hash
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\integrity\99dseBOagY3mzu5Y8Eqm8gRI_o8QbbCp7R2Ew9bQ_5E=.hash
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\integrity\ZxXy75PYbzJxNfAc-SAP1nUYm4gt1jSaOpFnBb9m85M=.hash
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\integrity\BaZPMj95_YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=.hash
@@ -1792,13 +1791,11 @@ C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\Z
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\integrity\XMbWzSbWz38yBXaSo6e8kAgk2oM6rEjZoZYJBkMR37Q=.hash
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\integrity\LqwA2Rpm96Ualk0IhLZar87kfRCyKHzHTeTt2jYhm7M=.hash
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\integrity\czNf3btAeBW-vvID5LAfgcsNZ_GM3ssVuPaMflcg0rs=.hash
-C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\integrity\suAqKfaCqUsqUZPSUVbig1LSGbr9YFj6isQ1fZW10ow=.hash
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\integrity\mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=.hash
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\integrity\3S0qzYaBEKOBXarzVLNzNAFXlwJr6nI3lFlYUpQTPH8=.hash
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\integrity\UC-3Rm1NkdNdlIrzYARo_dO-HDlS5mhPxo0IQv7kma8=.hash
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\integrity\SPHS1EAPAcMFN4TEIUYl3FWtoCQTsNJch0XVGgok1eE=.hash
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\blazor\blazor.boot.json
-C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\integrity\tppE-K2nQiA9OqyUoIv-amsf22dWHtUzfOorgKdwRBI=.hash
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\compressed\_framework\_bin\ZenZygClient.dll.gz
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Net.Http.Json.dll.gz
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Buffers.dll.gz
@@ -1946,3 +1943,7 @@ C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\Z
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\ZenZygClient.csproj.CopyComplete
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\ZenZygClient.dll
 C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\ZenZygClient.pdb
+C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\ZenZygClient.csprojAssemblyReference.cache
+C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\integrity\nMStkzYL194PaHD5ueaQXvb1gZEWaU_mt9cKlrsiWbU=.hash
+C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\integrity\suCVRCazsAWYXXRbfd7ex4S9tE5GrxaTX0_tP4mGvMo=.hash
+C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygClient\obj\Debug\netstandard2.1\integrity\cwZSXBhOokp9dPggtSejSGVD2lZFMBkQmhtFAmW8n7o=.hash

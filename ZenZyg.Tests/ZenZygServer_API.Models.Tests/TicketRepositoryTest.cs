@@ -17,8 +17,10 @@ namespace ZenZyg.Tests.ZenZygServer_API.Models.Tests
 
         public TicketRepositoryTest()
         {
-            string cs = @"Data Source=/users/anesskrijelj/GitHub/Personal/ZenZygBackup/ZenZygServer_API/test.db";
-            _connection = new SqliteConnection(cs);  
+            string cs = @"Data Source=C:\Users\mikke\OneDrive\Dokumenter\3. semester\BDSA projekt\ZenzygBDSA_Projekt\ZenZygServer_API\test2.db";
+             _connection = new SqliteConnection(cs);
+            //_connection.Open();
+            //_connection = new SqliteConnection("Filename =:memory:");
             _connection.Open();
             var builder = new DbContextOptionsBuilder<ZenZygContext>().UseSqlite(_connection);
             _context = new ZenZygContext(builder.Options);

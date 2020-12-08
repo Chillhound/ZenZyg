@@ -6,9 +6,9 @@ namespace ZenZygServer_API.Models
     public class TicketCreateDTO
     {
         [Required]
-        public int? StoreId { get; set; }
+        public int StoreId { get; set; }
         [Required]
-        public int? CustomerId { get; set; }
+        public int CustomerId { get; set; }
 
     }
 }

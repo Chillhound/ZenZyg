@@ -6,7 +6,7 @@ namespace ZenZygServer_API.Entities {
      
         public int Id { get; set; }
         [Required]
-        public int? StoreId { get; set; }
+        public int StoreId { get; set; }
         [Required]
         public string QRData { get; set; }
         [Required]
