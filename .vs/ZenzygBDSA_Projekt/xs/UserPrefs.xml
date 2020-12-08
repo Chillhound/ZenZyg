@@ -1,28 +1,28 @@
 ﻿<Properties StartupConfiguration="ZenZyg_All">
   <MonoDevelop.Ide.ItemProperties.ZenZygServer__API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.ZenZygClient PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ZenZygServer_API/Models/Repository/CustomerRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ZenZygClient/Pages/Confirmation.razor">
     <Files>
-      <File FileName="ZenZygServer_API/Models/Repository/CustomerRepository.cs" Line="62" Column="45" />
-      <File FileName="ZenZygServer_API/Models/Repository/ICustomerRepository.cs" Line="2" Column="1" />
-      <File FileName="ZenZygServer_API/Entities/Customer.cs" Line="7" Column="9" />
-      <File FileName="ZenZygServer_API/Entities/IZenZygContext.cs" Line="18" Column="83" />
-      <File FileName="ZenZygServer_API/Models/DTO/CustomerDetailsDTO.cs" Line="7" Column="44" />
-      <File FileName="ZenZygServer_API/Models/DTO/CustomerCreateDTO.cs" Line="7" Column="9" />
-      <File FileName="ZenZygServer_API/Models/DTO/CustomerUpdateDTO.cs" Line="7" Column="44" />
+      <File FileName="ZenZygServer_API/Controllers/StoreController.cs" Line="1" Column="1" />
+      <File FileName="ZenZygServer_API/Controllers/TicketController.cs" Line="43" Column="27" />
+      <File FileName="ZenZygServer_API/Models/Repository/ITicketRepository.cs" Line="1" Column="1" />
+      <File FileName="ZenZygClient/Pages/Index.razor" Line="39" Column="41" />
+      <File FileName="ZenZygClient/Pages/Order.razor" Line="1" Column="1" />
+      <File FileName="ZenZygClient/Pages/Confirmation.razor" Line="93" Column="40" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ZenzygBDSA_Projekt" expanded="True">
+            <Node name="ZenZygClient" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Confirmation.razor" selected="True" />
+              </Node>
+            </Node>
             <Node name="ZenZygServer_API" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Entities" expanded="True" />
               <Node name="Models" expanded="True">
-                <Node name="DTO" expanded="True" />
-                <Node name="Repository" expanded="True">
-                  <Node name="CustomerRepository.cs" selected="True" />
-                </Node>
+                <Node name="Repository" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -38,7 +38,6 @@
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="ZenZyg_All" Name="ZenZyg_All">
       <Items>
-        <StartupItem ItemId="{D12C7CE8-7CAE-4D9C-8589-9F40A1DBB67D}" ItemName="ZenZygClient" ConfigurationId="Default" />
         <StartupItem ItemId="{BF7DBB42-4170-4FB6-86A9-722F2160F69A}" ItemName="ZenZygServer_API" ConfigurationId="Default" />
       </Items>
     </MultiItemSolutionRunConfiguration>

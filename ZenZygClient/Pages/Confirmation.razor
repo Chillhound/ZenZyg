@@ -1,19 +1,23 @@
-﻿@page "/confirmation";
+﻿@page "/confirmation/{StoreId:int}";
+@inject HttpClient _client;
+@inject NavigationManager NavManager
+@inject IJSRuntime JSRuntime
+@using ZenZygClient.Models;
 
 <h3>Confirmation</h3>
 
 <div class="container">
-    <div class="row">
+    <div class="row align-items-center">
         <div class="col-6 col-md-4">
             <div class="container">
                 <div class="row row-cols-2">
                     <div class="col text-center">
                         <label class="h5" for="date">Date of timeslot</label>
-                        <input type="text" class="form-control-plaintext text-center" readonly id="date" value="xxx" />
+                        <input type="text" class="form-control-plaintext text-center" readonly id="date" value="@DateTime.Now.ToString("dd/MM/yyyy")" />
                     </div>
                     <div class="col text-center">
                         <label class="h5" for="timeslot">Timeslot</label>
-                        <input type="text" class="form-control-plaintext text-center" readonly id="timeslot" value="xxx" />
+                        <input type="text" class="form-control-plaintext text-center" readonly id="timeslot" value="Kl. @DateTime.Now.ToString("HH:mm")" />
                     </div>
                 </div>
             </div>
@@ -23,24 +27,71 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Phone number</span>
                     </div>
-                    <input type="number" class="form-control" aria-describedby="basic-addon1" placeholder="Input phone number here...">
+                    <input type="number" class="form-control" aria-describedby="basic-addon1" placeholder="Input phone number here..." @bind="PhoneNumber" />
                 </div>
 
                 <div class="container text-center">
                     <div class="row align-content-center">
-                        <input class="btn btn-primary" type="submit" value="Get queue ticket" />
+                        <input class="btn btn-primary" type="submit" value="Get queue ticket" @onclick="ReserveBooking" />
                     </div>
                 </div>
-            </div>  
+            </div>
         </div>
         <div class="col-md-8">
-            
+            @if (Ticket != null)
+            {
+                <img src="data:image/png;base64, @Ticket.QRData" alt="hejsa" class="rounded mx-auto d-block" />
+                <h2 class="d-flex justify-content-center">Ticket ID: @TicketId</h2>
+                <label class="d-flex justify-content-center blockquote-footer">Customer ID: @PhoneNumber</label>
+                <div class="text-center">
+                    <input class="btn btn-primary" type="submit" value="Leave Queue" @onclick="LeaveQueue" />
+                </div>
+            }
         </div>
     </div>
 </div>
 
-    
 
-    @code {
 
+@code {
+    [Parameter]
+    public int StoreId { get; set; }
+
+    private string PhoneNumber { get; set; }
+
+    private DateTime Date { get; set; }
+
+    TicketViewModel Ticket;
+
+    string TicketId;
+
+    private async Task ReserveBooking(MouseEventArgs e)
+    {
+        var response = await _client.PostAsync("ticket/createticket/store/" + StoreId + "/customer/" + PhoneNumber, new StringContent("Create"));
+
+        TicketId = response.Content.ReadAsStringAsync().Result;
+
+
+
+        Ticket = await _client.GetFromJsonAsync<TicketViewModel>("ticket/" + TicketId);
+
+
+
+        //NavManager.NavigateTo("https://google.dk");
     }
+
+    private async Task LeaveQueue(MouseEventArgs e)
+    {
+        //await _client.PostAsync("queue/delete/" + StoreId);
+
+        if (!await JSRuntime.InvokeAsync<bool>("confirm", $"Are you sure you want to leave the queue?"))
+            return;
+
+        if (!await JSRuntime.InvokeAsync<bool>("confirm", $"Are you absolutely sure? There is no going back from this!"))
+            return;
+
+        await _client.PostAsync("ticket/delete/" + TicketId, new StringContent("Dequeue"));
+
+        NavManager.NavigateTo("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    }
+}

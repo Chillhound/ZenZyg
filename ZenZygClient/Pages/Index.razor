@@ -1,27 +1,30 @@
 ﻿@page "/"
 @inject HttpClient _client;
+@using ZenZygClient.Models;
+
 <h1>Supermarked</h1>
 
 
 
-    @if (shops != null)
+    @if (stores != null)
     {
         <div class="container">
             <div class="row">
-                @foreach (var shop in shops)
+                @foreach (var store in stores)
                 {
-                    <div class="card">
-                        <div class="shop card-body">
-                            <div class="card-title">
-                                <p>@shop.Navn</p>
-                            </div>
+                <div class="card">
+                    <img src="img/@(store.Name).png" height="250" class="card-img-top" />
+                    <div class="shop card-body">
+                        <div class="card-title">
+                            <h4>@store.Name</h4>
+                        </div>
 
-                            <div class="card-text">
-                                <a href="/order" class="btn btn-link stretched-link"></a>
-                                <p>@shop.Distance km</p>
-                            </div>
+                        <div class="card-text">
+                            <a href="/order/@store.StoreId" class="btn btn-link stretched-link"></a>
+                            <p>@store.Address</p>
                         </div>
                     </div>
+                </div>
                 }
             </div>
         </div>
@@ -33,21 +36,14 @@
 
 
     @code{
-        private Shop[] shops;
+        private StoreViewModel[] stores;
 
         protected override async Task OnInitializedAsync()
         {
-            shops = await _client.GetFromJsonAsync<Shop[]>("sample-data/shops.json");
+            stores = await _client.GetFromJsonAsync<StoreViewModel[]>("store/all");
         }
 
-        public class Shop
-        {
-            public string Navn { get; set; }
 
-            public int Distance { get; set; }
-
-            public string Ejer { get; set; }
-        }
     }
     
 

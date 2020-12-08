@@ -29,7 +29,7 @@ namespace ZenZygServer_API.Controllers
         // Post: ApiController/Create
         [Route("createticket/store/{storeID:int}/customer/{customerID:int}")]
         //[HttpPost]
-        public async Task<int> Create(int storeID, int customerID) 
+        public async Task<IActionResult> Create(int storeID, int customerID) 
         {
             
             TicketCreateDTO ticketCreateDTO = new TicketCreateDTO
@@ -40,7 +40,7 @@ namespace ZenZygServer_API.Controllers
             
             int id = await _repository.Create(ticketCreateDTO);
             await _repositoryQueue.EnterQueue(id);
-            return id;
+            return Ok(id);
         }
 
 
