@@ -31,7 +31,7 @@ namespace ZenZygServer_API
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsApi",
-                    builder => builder.WithOrigins("https://localhost:6001", "https://localhost:5001")
+                    builder => builder.WithOrigins("https://localhost:44361", "https://localhost:44303")
                 .AllowAnyHeader()
                 .AllowAnyMethod());
             });

@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "ZenZygClient.dll": "sha256-8MkHImspkZyVF87IqWhrT1A2YW9nLz+iEF+g3tkn3S4=",
+      "ZenZygClient.dll": "sha256-rV1E1m7iUj\/JUxTVj+saE0V7O7rQY9G5vfyC1tLB+0o=",
       "System.Net.Http.Json.dll": "sha256-99dseBOagY3mzu5Y8Eqm8gRI+o8QbbCp7R2Ew9bQ+5E=",
       "System.Buffers.dll": "sha256-ZxXy75PYbzJxNfAc\/SAP1nUYm4gt1jSaOpFnBb9m85M=",
       "mscorlib.dll": "sha256-BaZPMj95+YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=",
@@ -72,7 +72,7 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-czNf3btAeBW\/vvID5LAfgcsNZ+GM3ssVuPaMflcg0rs="
     },
     "pdb": {
-      "ZenZygClient.pdb": "sha256-a9HUSBvqaUE\/My6gqbm2muHhT8J\/D1VGfA1y92WcACc="
+      "ZenZygClient.pdb": "sha256-MmbinP\/QgLQNsJ2gs+BUvI0sVu4hV1BM3vF\/vD2mayk="
     },
     "runtime": {
       "dotnet.3.2.0.js": "sha256-mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=",

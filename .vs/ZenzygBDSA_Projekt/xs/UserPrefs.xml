@@ -1,15 +1,12 @@
 ﻿<Properties StartupConfiguration="ZenZyg_All">
   <MonoDevelop.Ide.ItemProperties.ZenZygServer__API PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.ZenZygClient PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ZenZygClient/Shared/MainLayout.razor">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ZenZygClient/Program.cs">
     <Files>
-      <File FileName="ZenZygServer_API/Controllers/TicketController.cs" Line="40" Column="24" />
-      <File FileName="ZenZygClient/Pages/Order.razor" Line="1" Column="1" />
-      <File FileName="ZenZygClient/Pages/Confirmation.razor" Line="92" Column="82" />
-      <File FileName="ZenZygServer_API/Models/Repository/TicketRepository.cs" Line="23" Column="17" />
-      <File FileName="ZenZygClient/wwwroot/css/app.css" Line="178" Column="6" />
-      <File FileName="ZenZygClient/Shared/MainLayout.razor" Line="9" Column="81" />
-      <File FileName="ZenZygClient/Shared/NavMenu.razor" Line="1" Column="119" />
+      <File FileName="ZenZygClient/Program.cs" Line="20" Column="109" />
+      <File FileName="ZenZygServer_API/Startup.cs" Line="34" Column="103" />
+      <File FileName="ZenZygServer_API/Properties/launchSettings.json" Line="24" Column="67" />
+      <File FileName="ZenZygClient/Properties/launchSettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,9 +14,12 @@
           <Node name="ZenzygBDSA_Projekt" expanded="True">
             <Node name="ZenZygClient" expanded="True">
               <Node name="Pages" expanded="True" />
-              <Node name="Shared" expanded="True">
-                <Node name="MainLayout.razor" selected="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Shared" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
               </Node>
+              <Node name="Program.cs" selected="True" />
             </Node>
             <Node name="ZenZygServer_API" expanded="True">
               <Node name="Controllers" expanded="True" />
@@ -28,6 +28,7 @@
                 <Node name="DTO" expanded="True" />
                 <Node name="Repository" expanded="True" />
               </Node>
+              <Node name="Properties" expanded="True" />
             </Node>
           </Node>
         </State>

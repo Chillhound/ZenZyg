@@ -109,6 +109,8 @@ using ZenZygClient.Models;
           
         private StoreViewModel[] stores;
 
+        private string ext = ".png";
+
         protected override async Task OnInitializedAsync()
         {
             stores = await _client.GetFromJsonAsync<StoreViewModel[]>("store/all");

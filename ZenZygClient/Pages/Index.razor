@@ -12,19 +12,19 @@
             <div class="row">
                 @foreach (var store in stores)
                 {
-                    <div class="card">
-                        <div class="shop card-body">
-                            <div class="card-title">
-                                <p>@store.Name</p>
-                            </div>
+                <div class="card">
+                    <img src="img/@(store.Name).png" height="250" class="card-img-top" />
+                    <div class="shop card-body">
+                        <div class="card-title">
+                            <h4>@store.Name</h4>
+                        </div>
 
-                            <div class="card-text">
-                                <a href="/order/@store.StoreId" class="btn btn-link stretched-link"></a>
-                                <p>@store.Address</p>
-                                <img src="https://www.hvidovrec.dk/media/c2jmcsy4/netto-shoppage.png" width="64" class="rounded float-right" />
-                            </div>
+                        <div class="card-text">
+                            <a href="/order/@store.StoreId" class="btn btn-link stretched-link"></a>
+                            <p>@store.Address</p>
                         </div>
                     </div>
+                </div>
                 }
             </div>
         </div>
@@ -37,6 +37,8 @@
 
     @code{
         private StoreViewModel[] stores;
+
+        private string ext = ".png";
 
         protected override async Task OnInitializedAsync()
         {

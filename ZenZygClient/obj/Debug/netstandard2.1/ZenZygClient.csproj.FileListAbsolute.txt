@@ -1958,6 +1958,6 @@ C:/Users/mikke/OneDrive/Dokumenter/3. semester/BDSA projekt/ZenzygBDSA_Projekt/Z
 /Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/Debug/netstandard2.1/integrity/M1pYQBRnwZmTq5CodeZxTzsPoWvxBmTSTyy3y0pe8P0=.hash
 /Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/Debug/netstandard2.1/integrity/APJhF7Cne1YtXAEDjYtS_NC54Yt8Uy4W364YV6GfInE=.hash
 /Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/Debug/netstandard2.1/integrity/QC2lFdhGg2mRa2tR3yhZ47dJn2L5nn4cRFtCHgTXc2c=.hash
-/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/Debug/netstandard2.1/integrity/8MkHImspkZyVF87IqWhrT1A2YW9nLz_iEF_g3tkn3S4=.hash
-/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/Debug/netstandard2.1/integrity/a9HUSBvqaUE-My6gqbm2muHhT8J-D1VGfA1y92WcACc=.hash
-/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/Debug/netstandard2.1/integrity/5EM1hFQKov-hxOGOlg2XNKn_mMB4AuEOEzEvraOFmR0=.hash
+/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/Debug/netstandard2.1/integrity/rV1E1m7iUj-JUxTVj_saE0V7O7rQY9G5vfyC1tLB_0o=.hash
+/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/Debug/netstandard2.1/integrity/MmbinP-QgLQNsJ2gs_BUvI0sVu4hV1BM3vF-vD2mayk=.hash
+/Users/anesskrijelj/GitHub/BDSA/ZenZyg/ZenZygClient/obj/Debug/netstandard2.1/integrity/s5sAUW45Ag0RStQ5YwlnHle3h9STe7zXkwxnOTZFjs8=.hash
