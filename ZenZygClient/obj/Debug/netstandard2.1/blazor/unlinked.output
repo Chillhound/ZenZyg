@@ -36,6 +36,7 @@ obj/Debug/netstandard2.1/blazor/unlinked/System.ComponentModel.Annotations.dll
 obj/Debug/netstandard2.1/blazor/unlinked/System.ComponentModel.DataAnnotations.dll
 obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.AspNetCore.Components.dll
 obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.Extensions.Logging.Abstractions.dll
+obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.JSInterop.dll
 obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.AspNetCore.Components.WebAssembly.dll
 obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.Extensions.DependencyInjection.dll
 obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.Extensions.Primitives.dll
@@ -60,6 +61,5 @@ obj/Debug/netstandard2.1/blazor/unlinked/System.Diagnostics.Tracing.dll
 obj/Debug/netstandard2.1/blazor/unlinked/System.Resources.ResourceManager.dll
 obj/Debug/netstandard2.1/blazor/unlinked/System.Runtime.dll
 obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.Extensions.Options.dll
-obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.JSInterop.dll
 obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.JSInterop.WebAssembly.dll
 obj/Debug/netstandard2.1/blazor/unlinked/ZenZygClient.pdb

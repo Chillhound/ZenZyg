@@ -37,7 +37,7 @@ namespace ZenZygServer_API.Controllers
             
             int id = await _repository.Create(ticketCreateDTO);
             //return CreatedAtAction(nameof(Get), new { id }, default);
-            return Ok();
+            return Ok(id);
         }
 
 
