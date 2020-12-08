@@ -26,7 +26,7 @@ namespace ZenZygServer_API.Models
             var entity = new Queue
             {
                 StoreId = queue.StoreId,
-                TicketQueue = queue.TicketQueue
+                TicketQueue = ""
 
             };
 

@@ -45,7 +45,20 @@ namespace ZenZygServer_API.Models
             return await entity.FirstOrDefaultAsync();
 
         }
-        
+
+        public IQueryable<StoreListDTO> ReadAll()
+        {
+            return from s in _context.Stores
+                   select new StoreListDTO
+                   {
+                       StoreId = s.StoreId,
+                       Name = s.Name,
+                       StoreManagerId = s.StoreManagerId,
+                       Size = s.Size,
+                       Address = s.Address
+                   };
+        }
+
         public async Task<HttpStatusCode> Update(StoreUpdateDTO Store)
         {
             var entity = await _context.Stores.FindAsync(Store.StoreId);

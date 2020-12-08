@@ -8,6 +8,7 @@ namespace ZenZygServer_API.Models
     {
         Task<int> Create (StoreCreateDTO Store);
         Task<StoreDetailsDTO> Read (int StoreId);
+        IQueryable<StoreListDTO> ReadAll();
         Task<HttpStatusCode> Update (StoreUpdateDTO Store);
         Task<HttpStatusCode> Delete (int StoreId);
     }

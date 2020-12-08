@@ -29,7 +29,7 @@ namespace ZenZygServer_API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ZenZygContext>(o => o.UseSqlite("Filename=test3.db"));
+            services.AddDbContext<ZenZygContext>(o => o.UseSqlite("Filename=zenzyg.db"));
             services.AddScoped<IZenZygContext, ZenZygContext>();
             services.AddScoped<ICustomerRepository, CustomerRepository>();
             services.AddScoped<IStoreRepository, StoreRepository>();

@@ -55,6 +55,13 @@ namespace ZenZygServer_API.Controllers
             return storeDetails;
         }
 
+        [Route("all")]
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<StoreListDTO>>> Read()
+        {
+            return await _repository.ReadAll().ToListAsync();
+        }
+
 
         // PUT: tags/5
         // https://localhost:44361/updatestore/id/1/name/aldi/storemanagerid/123/size/9.333/address/Rune Lugterbugtsvej 47, 42069 Danmaaaark
