@@ -12,14 +12,17 @@ namespace ZenZygServer_API.Models
     public class QueueRepository : IQueueRepository
     {
         private readonly IZenZygContext _context;
+        private QueueConverter QC = new QueueConverter();
 
         public QueueRepository(IZenZygContext context)
         {
             _context = context;
+           
         }
 
         public async Task<int> Create(QueueCreateDTO queue)
         {
+
             var entity = new Queue
             {
                 StoreId = queue.StoreId,
@@ -64,41 +67,70 @@ namespace ZenZygServer_API.Models
         */
         public async Task<HttpStatusCode> EnterQueue(int ticketId) 
         {
-             var storeId = from t in _context.Tickets
+             var store = from t in _context.Tickets
                          where t.Id == ticketId
                          select t.StoreId;
 
-
-
+           var storeId = await store.FirstOrDefaultAsync();
+            
+            
             var queue = _context.Queues.Find(storeId);
 
-           queue.TicketQueue.Enqueue(ticketId);
+            var q = QC.StringToQueue(queue.TicketQueue);
+            // var findQueue = from q in _context.Queues
+            //  where q.StoreId == storeId
+            //  select q;
+            if (queue != null)
+            {
+                // queue.TicketQueue.Enqueue(ticketId);
+                q.Enqueue(ticketId);
 
-            await _context.SaveChangesAsync();
+                var x = QC.QueueToString(q);
 
+                queue.TicketQueue = x;
+                await _context.SaveChangesAsync();
+            }
             return HttpStatusCode.OK;
         }
 
         public async Task<HttpStatusCode> ExitQueue(int ticketId)
         {
-            TicketDetailsDTO ticket = (TicketDetailsDTO)
-                from t in _context.Tickets
-                where t.Id == ticketId
-                select new TicketDetailsDTO
-                {
-                    TicketId = t.Id,
-                    StoreId = t.StoreId,
-                    QRData = t.QRData,
-                    CustomerId = t.CustomerId
-                };
-            var q = await _context.Queues.FindAsync(ticket.StoreId);
+            var store = from t in _context.Tickets
+                        where t.Id == ticketId
+                        select t.StoreId;
 
-            q.TicketQueue.Dequeue();
+            var storeId = await store.FirstOrDefaultAsync();  // virker ikke
 
+            var queue = await _context.Queues.FindAsync(storeId);
+
+            var q = QC.StringToQueue(queue.TicketQueue);
+
+            q = new Queue<int>(q.Where(x => x != ticketId));
+
+            var x = QC.QueueToString(q);
+
+            queue.TicketQueue = x;
             await _context.SaveChangesAsync();
 
             return HttpStatusCode.OK;
 
+        }
+
+        public async Task<int> CountQueue(int ticketId) 
+        {
+            var store = from t in _context.Tickets
+            where t.Id == ticketId
+            select t.StoreId;
+
+            var storeId = await store.FirstOrDefaultAsync();  // virker ikke
+
+            var queue = await _context.Queues.FindAsync(storeId);
+
+            var x = QC.StringToQueue(queue.TicketQueue);
+
+
+            var length = x.Count;
+            return length;
         }
     }
 }

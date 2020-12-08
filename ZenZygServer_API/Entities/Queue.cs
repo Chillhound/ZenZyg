@@ -12,8 +12,8 @@ namespace ZenZygServer_API.Entities
 
         public int StoreId { get; set; }
         
-        [NotMapped]
-        public Queue<int> TicketQueue { get; set; }
+        
+        public string TicketQueue { get; set; }
 
     }
     

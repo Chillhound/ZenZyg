@@ -40,7 +40,6 @@ namespace ZenZygServer_API.Controllers
             
             int id = await _repository.Create(ticketCreateDTO);
             await _repositoryQueue.EnterQueue(id);
-            //return CreatedAtAction(nameof(Get), new { id }, default);
             return id;
         }
 
@@ -63,13 +62,17 @@ namespace ZenZygServer_API.Controllers
         [Route("delete/{id:int}")]
         public async Task<IActionResult> Delete(int id)
         {
+
+            await _repositoryQueue.ExitQueue(id);
+
             var TicketDetails = await _repository.Delete(id);
 
             if (TicketDetails == HttpStatusCode.NotFound)
             {
                 return NotFound();
             }
-            
+          
+          
             return Ok();
         }
     }

@@ -16,6 +16,7 @@ namespace ZenZygServer_API.Models
 
         Task<HttpStatusCode> EnterQueue(int ticketId);
         Task<HttpStatusCode> ExitQueue(int ticketId);
+        Task<int> CountQueue(int ticketId);
 
     }
 }

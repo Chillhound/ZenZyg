@@ -6,7 +6,7 @@ namespace ZenZygServer_API.Models
     {
         public int TicketId { get; set; }
         [Required]
-        public int? StoreId { get; set; }
+        public int StoreId { get; set; }
         [Required]
         public string QRData { get; set; }
         [Required]

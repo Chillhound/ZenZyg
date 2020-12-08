@@ -6,7 +6,7 @@ namespace ZenZygServer_API.Entities
     {
         public int StoreManagerId { get; set; }
 
-        public int? StoreId { get; set; }
+        public int StoreId { get; set; }
 
         [Required]
         public string Name { get; set; }

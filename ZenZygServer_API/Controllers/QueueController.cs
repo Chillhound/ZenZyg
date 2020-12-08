@@ -48,41 +48,13 @@ namespace ZenZygServer_API.Controllers
 
             return queueDetails;
         }
-        /*
-        public async Task<IActionResult> EnterQueue(int id, int ticketID)  
-        {  
-            
-        }
 
-
-        public async Task<IActionResult> ExitQueue(int id) 
-        { 
-        
-        }
-        
-        //Route needed
-        public async Task<IActionResult> Update(int id)
+        [Route("getQueueLength/ticket/{ticketId:int}")]
+        public async Task<ActionResult<int>> Position(int ticketId)
         {
+            var queueDetails = await _repository.CountQueue(ticketId);
 
-
-
-
-            QueueUpdateDTO queue = new QueueUpdateDTO
-            {
-                id = id
-
-
-
-            };
-
-
-            var response = await _repository.Update(queue);
-            if (response == HttpStatusCode.NotFound)
-            {
-                return NotFound();
-            }
-            return Ok();
+            return queueDetails;
         }
-        */
     }
 }
